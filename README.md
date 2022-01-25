@@ -1,5 +1,5 @@
 
-- [manjaro-tutorial](https://liupj.top/manjaro-tutorial/#/)
+- [manjaro-tutorial](http://liupj.top/manjaro-tutorial/)
 
 #### 前言
 
