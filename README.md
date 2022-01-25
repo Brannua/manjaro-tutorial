@@ -1,6 +1,3 @@
-
-- [manjaro-tutorial](http://liupj.top/manjaro-tutorial/)
-
 #### 前言
 
 > 本教程旨在：
