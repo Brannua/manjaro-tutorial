@@ -55,11 +55,12 @@ git config --list --system
 
 > git diff 的替代品
 
-https://github.com/so-fancy/diff-so-fancy
-
 ```sh
+# 安装
 sudo pacman -S diff-so-fancy
 ```
+
+安装后，参考[官方文档](https://github.com/so-fancy/diff-so-fancy)，将它配置为 Git 的默认 diff 工具就可以了
 
 #### Github，全球最大的代码托管平台
 
