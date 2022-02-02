@@ -51,6 +51,16 @@ git config --list --global
 git config --list --system
 ```
 
+#### diff-so-fancy
+
+> git diff 的替代品
+
+https://github.com/so-fancy/diff-so-fancy
+
+```sh
+sudo pacman -S diff-so-fancy
+```
+
 #### Github，全球最大的代码托管平台
 
 > 这也是我们获取资源的重要途径
