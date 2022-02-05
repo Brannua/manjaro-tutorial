@@ -166,22 +166,9 @@ yay -S oneko
 #### 桌面特效
 
 - 自行配置，和 KWin 交互
+
 - 如果桌面特效失效
+
   - 可以尝试降级混成器的渲染后端（success）
+  
   - 可以尝试升级显卡驱动到稳定版（未尝试）
-
-#### 制作系统安装盘
-
-1. [rufus](https://github.com/pbatard/rufus)，如果你的主力机是 windows，你就能使用该软件轻松制作 linux 的安装盘
-
-2. [etcher](https://github.com/balena-io/etcher)，如果你的主力机是 Linux，你就能使用该软件轻松制作 Linux 的安装盘
-
-```bash
-yay -S etcher
-```
-
-3. [woeusb](https://github.com/WoeUSB/WoeUSB)，如果你的主力机是 Linux，你就能使用该软件轻松制作 windows 的安装盘
-
-```bash
-yay -S woeusb-ng
-```
