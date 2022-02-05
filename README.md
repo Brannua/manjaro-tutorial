@@ -55,24 +55,6 @@
 >
 > 不过别担心，这位大神=>[百度](https:///www.baidu.com/)已经提供了各种各样详细而成熟的安装教程，相信天赋异禀的你一定可以轻松搞定
 
-#### 制作系统安装盘的工具推荐
-
-> 我用的是一个 32G 大小的 usb3.0 的 U 盘
-
-1. [rufus](https://github.com/pbatard/rufus)，如果你的主力机是 windows，你就能使用该软件轻松制作 linux 的安装盘
-
-2. [etcher](https://github.com/balena-io/etcher)，如果你的主力机是 Linux，你就能使用该软件轻松制作 Linux 的安装盘
-
-```bash
-yay -S etcher
-```
-
-3. [woeusb](https://github.com/WoeUSB/WoeUSB)，如果你的主力机是 Linux，你就能使用该软件轻松制作 windows 的安装盘
-
-```bash
-yay -S woeusb-ng
-```
-
 #### 注意
 
 > 本教程不提供科学上网教程，但为了能够下载到必须的代码包，**必须解决科学上网这个问题**，才能继续阅读并顺利实践本教程！
