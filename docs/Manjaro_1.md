@@ -99,24 +99,23 @@ sudo pacman -S base base-devel
 
 ```bash
 sudo pacman -S xdg-user-dirs-gtk
-
+```
+```bash
 export LANG=en_US
-
+```
+```bash
 xdg-user-dirs-gtk-update
 ```
 
-- 此时，系统就会弹出窗口，提示将要把目录名称改为英文，点击确定即可，然后我们再执行如下命令将系统语言改回中文和 UTF-8 编解码方式
+- 此时会弹出窗口，提示将要把目录名称改为英文，点击确定即可，然后我们再执行如下命令
 
 ```bash
 export LANG=zh_CN.UTF-8
 ```
 
 - 然后，系统自带的文件资源管理器 Dolphin 侧栏的子节点的映射路径有可能不正确，需逐个右键编辑校对一下
-- 最后，我们执行如下命令删除家目录 ~/ 下的“桌面”目录，因为和“Desktop”目录重复
 
-```bash
-rm -rf ~/桌面
-```
+- 最后，我们删除用户主目录（家目录）下的“桌面”目录，因为和“Desktop”目录重复
 
 #### vim，终端下的文件编辑器
 
