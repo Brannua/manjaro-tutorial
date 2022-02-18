@@ -137,10 +137,10 @@ sudo pacman -S fcitx5-im fcitx5-chinese-addons
 # 安装依赖和配置工具
 sudo pacman -S fcitx5-qt fcitx5-gtk fcitx5-configtool
 
-# 安装中文维基百科词库
+# 安装中文维基百科词库（可选，我要！）
 sudo pacman -S fcitx5-pinyin-zhwiki
 
-# 安装皮肤
+# 安装皮肤（可选，我就不要了～）
 sudo pacman -S  fcitx5-material-color
 
 # 使用 vim 打开配置文件（无则会自动新建）
