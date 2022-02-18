@@ -33,7 +33,7 @@ git config --global core.pager ''
 # 将新仓库的初始分支名设置为 master
 git config --global init.defaultBranch master
 
-# 限制 git 的单次提交最大数据量，1MB==1048576Byte
+# （可选，我就先不设置了～）限制 git 的单次提交最大数据量，1MB==1048576Byte
 git config --global http.postBuffer 1048576
 ```
 
