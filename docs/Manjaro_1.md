@@ -65,20 +65,19 @@ sudo pacman -Syyu
   - 然后，打开右下角的调用钱包管理器，更改密码，设置为空密码即可
   - 重启系统，可以看到密码认证已经跳过
 
-- 接下来我们尝试使用 pacman 来安装第一个软件，screenfetch，该软件可以在终端中输出你电脑配置的简要信息
+- 你的系统应该已经安装了 neofetch 这个软件包，你只需在终端中执行`neofetch`命令，即可打印出你的电脑的相关信息
+
+- 接下来我们尝试使用 pacman 来安装第一个软件，cmatrix，该软件可以在终端中展示黑客帝国代码雨的效果
 
 ```bash
-sudo pacman -S screenfetch
+sudo pacman -S cmatrix
 ```
 
 - 解释：
   - sudo，可理解为 super user do，在一行命令的开头写上 sudo 就意味着本行命令会以系统管理员的身份执行（会被要求输入密码）
   - -S，安装
-- 安装完毕使用 screenfetch，只需在终端执行一条命令
 
-```bash
-screenfetch
-```
+- 安装完毕后，要运行 cmatrix 软件，只需在终端执行`cmatrix`命令
 
 - 然后我们下载安装两个必要的工具包
 
