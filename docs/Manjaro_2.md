@@ -70,6 +70,16 @@ sudo pacman -S diff-so-fancy
 
 - 从今往后，我们使用 ssh 的方式与 github 通信就不需要密码，因为本地有私钥，云端有公钥，公私钥加解密的方式就已经确保了通信的安全性
 
+#### 调教触摸板
+
+> 可以像 macos 那样给触摸板自定义很多手势操作
+
+- First to see [FAQ](https://github.com/JoseExposito/touchegg#faq)
+
+- Use [touchegg](https://github.com/JoseExposito/touchegg)
+
+- [manual-configuration](https://github.com/JoseExposito/touchegg#manual-configuration)
+
 #### 配置你的 vim，让它更好用
 
 - 只需将我的[配置文件](https://github.com/Brannua/dot_files/blob/master/.vimrc)拷贝到你的家目录下，然后重启 vim 即可

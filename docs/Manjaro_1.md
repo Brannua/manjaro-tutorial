@@ -166,13 +166,3 @@ SDL_IM_MODULE DEFAULT=fcitx5
 3. 勾选在预编辑中显示完整拼音
 4. 点击“应用”！
 ```
-
-#### 调教触摸板
-
-> 可以像 macos 那样给触摸板自定义很多手势操作
-
-- First to see [FAQ](https://github.com/JoseExposito/touchegg#faq)
-
-- Use [touchegg](https://github.com/JoseExposito/touchegg)
-
-- [manual-configuration](https://github.com/JoseExposito/touchegg#manual-configuration)
