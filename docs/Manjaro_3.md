@@ -64,8 +64,8 @@ sudo pacman -S flameshot
 #### 画图，图片编辑工具
 
 ```bash
-sudo pacman -S kolourpaint # windows 上 「画板」 的替代品，专为 KDE 而生
-sudo pacman -S krita	     # 功能更高级，面向对绘画软件有较高要求的专业用户
+sudo pacman -S kolourpaint    # windows 上 「画板」 的替代品，专为 KDE 而生
+sudo pacman -S krita          # 功能更高级，面向对绘画软件有较高要求的专业用户
 ```
 
 #### 录屏软件
