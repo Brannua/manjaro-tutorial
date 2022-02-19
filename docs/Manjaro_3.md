@@ -74,7 +74,7 @@ sudo pacman -S krita          # 功能更高级，面向对绘画软件有较高
 sudo pacman -S simplescreenrecorder
 ```
 
-- 我的电脑需要卸载核显驱动以解决录屏的时候屏幕闪烁撕裂的问题
+- 华硕vm520u商务笔记本电脑需要卸载核显驱动以解决录屏时屏幕闪烁撕裂的问题
 
 ```bash
 yay -Rssn xf86-video-intel
