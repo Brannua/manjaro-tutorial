@@ -32,7 +32,6 @@ sudo pacman -S kdialog # chrome 的可选依赖
 - 本地视频播放器：相比于 vlc，我更喜欢 mpv
 
 ```bash
-# 安装方式
 sudo pacman -S mpv
 ```
 
