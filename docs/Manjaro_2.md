@@ -129,12 +129,41 @@ sudo npm i -g cnpm
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-- 然后安装一些好用的第三方软件包
-  - rangerWiki：https://github.com/ranger/ranger/wiki/
+#### 完善解压缩工具 ark
 
 ```bash
-sudo pacman -S unzip unrar ripgrep bat procs htop exa tree ranger
-yay -S autojump
+sudo pacman -S unzip unrar lzop lrzip
+```
+
+#### 好用的第三方软件包
+
+```bash
+sudo pacman -S tree
+```
+```bash
+sudo pacman -S exa # 替代 ls
+```
+```bash
+sudo pacman -S htop # 管理进程
+```
+```bash
+sudo pacman -S bat # 分页器
+```
+```bash
+sudo pacman -S procs # 替代 ps
+```
+```bash
+sudo pacman -S ripgrep # 替代 grep
+```
+
+#### ranger（可选）
+
+> 装B神器，我就暂时不安装了
+
+- rangerWiki：https://github.com/ranger/ranger/wiki/
+
+```bash
+sudo pacman -S ranger
 ```
 
 - 让 ranger 可以预览图片：https://github.com/ranger/ranger/wiki/Image-Previews#with-ueberzug
@@ -151,11 +180,12 @@ set preview_images true
 set preview_images_method ueberzug
 ```
 
+---
+
 - 按照官方文档下载下面两个软件包
   - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
 - 然后按照[这个](https://github.com/Brannua/cowsay_words/blob/master/README.md)进行配置（终端老牛讲单词）
-
 
 - 配置终端翻译工具，参考：[youdao-cli-translator](https://github.com/tsq/youdao-cli-translator#%E5%AE%89%E8%A3%85)
 
