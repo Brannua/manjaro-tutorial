@@ -156,8 +156,9 @@ yay -S visual-studio-code-bin
 #### 一些有意思的小程序
 
 ```bash
-# 终端小火车，终端代码雨，终端彩色打印
-sudo pacman -S sl cmatrix lolcat
+# 终端小火车，终端彩色打印
+sudo pacman -S sl lolcat
+
 # 跟随鼠标的小猫咪
 yay -S oneko
 ```
