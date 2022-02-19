@@ -197,7 +197,7 @@ sudo npm i -g youdao-cli-translator
 
 - 最后将我的[配置文件](https://github.com/Brannua/dot_files/blob/master/.zshrc)拷贝到你的家目录下，配置好 YOUDAO_APP_ID 和 YOUDAO_APP_KEY 然后重启 vim 即可
 
-#### 开启多线程下载以提高下载软件的速率（可选）
+#### 开启多线程下载以提高下载软件的速率（可选，我要 ！）
 
 ```bash
 sudo pacman -S axel
