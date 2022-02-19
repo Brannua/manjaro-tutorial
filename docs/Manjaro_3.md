@@ -122,7 +122,6 @@ yay -S typora
 #### 图形化代码编辑器
 
 ```bash
-# vscode
 yay -S visual-studio-code-bin
 ```
 
