@@ -78,7 +78,7 @@ sudo pacman -S diff-so-fancy
 
 - 第二步，安装核心程序包 [touchegg](https://github.com/JoseExposito/touchegg)
 
-- 第三步，安装图形化客户端，更方便地配置手势
+- 第三步，安装图形化客户端 [touche](https://github.com/JoseExposito/touche)，更方便地配置手势
 
 ```bash
 yay -S community/touche
