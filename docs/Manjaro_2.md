@@ -70,15 +70,21 @@ sudo pacman -S diff-so-fancy
 
 - 从今往后，我们使用 ssh 的方式与 github 通信就不需要密码，因为本地有私钥，云端有公钥，公私钥加解密的方式就已经确保了通信的安全性
 
-#### 调教触摸板（可选，我暂时不安装了）
+#### 自定义触摸板手势操作
 
-> 可以像 macos 那样给触摸板自定义很多手势操作
+> 就像 macos 的触摸板那样方便 ！
 
-- First to see [FAQ](https://github.com/JoseExposito/touchegg#faq)
+- 第一步，see [FAQ](https://github.com/JoseExposito/touchegg#faq)
 
-- Use [touchegg](https://github.com/JoseExposito/touchegg)
+- 第二步，安装核心程序包 [touchegg](https://github.com/JoseExposito/touchegg)
 
-- [manual-configuration](https://github.com/JoseExposito/touchegg#manual-configuration)
+- 第三步，安装图形化客户端，更方便地配置手势
+
+```bash
+yay -S community/touche
+```
+
+> 接下来重启电脑，然后运行应用程序 touche，自由设置手势操作吧～
 
 #### 配置你的 vim，让它更好用
 
