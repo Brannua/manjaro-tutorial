@@ -51,7 +51,7 @@ git config --list --global
 git config --list --system
 ```
 
-#### diff-so-fancy
+#### diff-so-fancy（可选，我暂时不安装了）
 
 > git diff 的替代品
 
@@ -66,7 +66,7 @@ sudo pacman -S diff-so-fancy
 
 > 这也是我们获取资源的重要途径
 
-- 为了更方便地托管我们的各种文件和各种代码而不需次次都询问我们 github 的账号密码，所以采用配置公私钥非对称加解密的方式让我们本地和 github 通信，这里只记录最简步骤，可参考我的[这篇博文](https://blog.csdn.net/Brannua/article/details/104460969)
+- 为了更方便地托管我们的各种文件和各种代码而不需次次都询问我们 github 的账号密码，所以采用配置公私钥非对称加解密的方式让我们本地和 github 通信，这里只记录最简步骤，可参考我的[这篇博文](https://liupj.top/2021/09/28/practise/git-ssh/)
 
 - 从今往后，我们使用 ssh 的方式与 github 通信就不需要密码，因为本地有私钥，云端有公钥，公私钥加解密的方式就已经确保了通信的安全性
 
