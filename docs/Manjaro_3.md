@@ -76,6 +76,12 @@ sudo pacman -S libreoffice-still   # 稳定版
 sudo pacman -S libreoffice-fresh   # 尝鲜版
 ```
 
+#### 相机
+
+```bash
+sudo pacman -S kamoso
+```
+
 #### 画图，图片编辑工具
 
 ```bash
