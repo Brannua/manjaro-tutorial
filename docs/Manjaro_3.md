@@ -155,19 +155,19 @@ yay -S visual-studio-code-bin
 - Event Calendar（一款集时钟，计时器，日历，天气预报于一体的小部件），下载安装好后右键部件拖到桌面或桌面底部的面板上，并给该部件配置你所在城市的 Id
 - Netspeed Widget（实时监控当前的网络速度）
 
-#### 手机和电脑沟通的利器 KDEConnect
+#### 手机和电脑沟通的利器 kde-connect
 
 - [官方文档](https://userbase.kde.org/KDEConnect/zh-hans#.E5.AE.89.E8.A3.85)
 
-> 为了解决 Android 和 KDE 之间的文件互传，我接触了 KDEConnect，但文件互传只是它众多实用功能的其中之一
+> 为了解决 Android 和 KDE 之间的文件互传，我接触了 kde-connect，但文件互传只是它众多实用功能的其中之一
 >
 > 这款软件是 KDE 自带的，电脑端无需安装
 
-- 我们需要在安卓手机上安装客户端 KDEConnect
+- 我们需要在安卓手机上安装客户端 kde-connect
   - 首先在手机上下载并安装开源应用商店[F-Droid](https://f-droid.org/)
-  - 然后从该应用商店中搜索并下载安装 KDEConnect
+  - 然后从该应用商店中搜索并下载安装 kde-connect
 
-- 手机端和电脑端的 KDEConnect 进行配对连接，两端即可正常通信
+- 手机端和电脑端的 kde-connect 进行配对连接，两端即可正常通信
   - 比如，配对后，进入手机相册，长按图片分享，即可发送给电脑
 - 注意
   - Android 9 以后不让后台应用直接访问剪贴板了，必须用户手动从通知栏主动发送剪贴板内容到电脑
