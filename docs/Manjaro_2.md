@@ -86,7 +86,9 @@ yay -S community/touche
 
 > 接下来重启电脑，然后运行应用程序 touche，自由设置手势操作吧～
 
-#### ![global-swipe](https://gitee.com/pj-l/imgs-1/raw/master/global-swipe.png)配置你的 vim，让它更好用
+![global-swipe](https://gitee.com/pj-l/imgs-1/raw/master/global-swipe.png)
+
+#### 配置你的 vim，让它更好用
 
 - 只需将我的[配置文件](https://github.com/Brannua/dot_files/blob/master/.vimrc)拷贝到你的家目录下，然后重启 vim 即可
 
