@@ -61,6 +61,21 @@ sudo pacman -S flameshot
 - 运行 flameshot，在系统托盘中右键 flameshot，依次点击`配置>快捷键`，将`复制选择到剪贴板`对应的`键`修改为回车键即可
 - 注意：若 flameshot 按下回车进行截图时桌面卡住，则可能是因为没有打开桌面通知，可查看系统托盘
 
+#### office
+
+- 主要有两种选择，onlyoffice（AUR） 和 LibreOffice
+
+- 我更喜欢 onlyoffice
+
+- 注意：WPS 为专有软件，不推荐使用
+
+```bash
+yay -S onlyoffice-bin
+
+sudo pacman -S libreoffice-still   # 稳定版
+sudo pacman -S libreoffice-fresh   # 尝鲜版
+```
+
 #### 画图，图片编辑工具
 
 ```bash
