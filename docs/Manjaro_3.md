@@ -174,6 +174,26 @@ yay -S visual-studio-code-bin
   - 插件设置列表的某些插件可以通过点击其名称跳转到该插件的设置页面
   - 一旦切换系统网络代理，就需要重新配对
 
+#### 投屏工具（android -> 电脑端）
+
+> screen-copy -> [scrcpy](https://github.com/Genymobile/scrcpy/blob/master/README.zh-Hans.md)
+
+> 注意：不要使用鸿蒙，生态以及兼容性远不及发展多年的安卓
+
+> 其实 scrcpy 远不止投屏一个功能，查看其官网说明自行探索按需使用即可
+
+```bash
+sudo pacman -S scrcpy
+```
+
+安卓设备最低需要支持 API 21 (Android 5.0)。
+
+确保安卓设备已[开启 adb 调试](https://developer.android.com/studio/command-line/adb.html#Enabling)。 - usb 调试
+
+在某些设备上，还需要开启[额外的选项](https://github.com/Genymobile/scrcpy/issues/70#issuecomment-373286323)以使用鼠标和键盘进行控制。
+
+使用 usb 线将 android 设备和电脑连接
+
 #### 一些有意思的小程序
 
 ```bash
