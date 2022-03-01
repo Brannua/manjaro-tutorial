@@ -86,7 +86,15 @@ yay -S community/touche
 
 > 接下来重启电脑，然后运行应用程序 touche，自由设置手势操作吧～
 
-![global-swipe](https://gitee.com/pj-l/imgs-1/raw/master/global-swipe.png)
+![](https://gitee.com/pj-l/imgs-1/raw/master/1-三指轻扫（窗口最大最小或还原，左右切换桌面）.png)
+
+![](https://gitee.com/pj-l/imgs-1/raw/master/2-四指轻扫（向上多桌面平铺、向下单桌面平铺、切换桌面）.png)
+
+![](https://gitee.com/pj-l/imgs-1/raw/master/3-双指捏合缩放.png)
+
+![](https://gitee.com/pj-l/imgs-1/raw/master/4-三指捏合显示所有应用程序.png)
+
+![](https://gitee.com/pj-l/imgs-1/raw/master/5-轻敲默认.png)
 
 #### 配置你的 vim，让它更好用
 
