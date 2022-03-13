@@ -76,6 +76,12 @@ sudo pacman -S libreoffice-still   # 稳定版
 sudo pacman -S libreoffice-fresh   # 尝鲜版
 ```
 
+#### 腾讯会议
+
+```bash
+yay -S aur/wemeet-bin
+```
+
 #### 相机
 
 ```bash
