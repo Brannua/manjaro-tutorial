@@ -117,25 +117,9 @@ yay -S community/touche
 sudo pacman -S yay
 ```
 
-#### node.js & npm
+#### node.js 环境
 
-```bash
-sudo pacman -S nodejs npm
-node -v
-npm -v
-
-# 如果你的工作场景需要使用到多个版本的 node.js，则使用 [nvm](https://github.com/nvm-sh/nvm) 管理 node.js 的版本
-sudo pacman -S nvm
-
------------以下均为没有配置科学上网时的下载加速手段-----------
-
-# 配置淘宝 mirrors
-npm config get registry
-npm config set registry https://registry.npm.taobao.org/
-
-# cnpm
-sudo npm i -g cnpm
-```
+- See [nvm、node.js、npm、nrm](https://liupj.top/2022/03/14/practise/nvm-nodejs-npm-nrm/)
 
 #### 配置你的 zsh，让它更好用
 
