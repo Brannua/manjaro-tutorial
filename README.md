@@ -45,6 +45,7 @@
   - [ManjaroForum](https://forum.manjaro.org/)
   - [ArchWiki](https://wiki.archlinux.org/)
   - [ArchForum](https://bbs.archlinux.org/)
+  - [KdeForum](https://forum.kde.org/)
   - [Github](https://github.com/)
   - [Google](https://www.google.com)
   - ~~[Baidu](https://www.baidu.com/)~~
