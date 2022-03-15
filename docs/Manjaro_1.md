@@ -27,6 +27,43 @@
 chsh -s /bin/zsh
 ```
 
+#### 配置一下 konsole 和 yakuake 的外观
+
+> 笔者自用
+
+- 首先将相关配置文件下载到本地，See [here](https://github.com/Brannua/dot-files/tree/master/konsole-yakuake-cfg)
+
+- 然后打开 konsole 进行配置
+
+```bash
+cd ~/.local/share/konsole
+
+ls -al
+
+# 若有文件输出，则删除所有文件
+# 然后将我的配置文件 Breeze.colorscheme & lpj-theme.profile 放到当前目录下
+# 鼠标右键 konsole 窗口，切换编辑方案，选择 lpj-theme
+# 鼠标右键 konsole 窗口，编辑当前方案，勾选「默认配置方案」，应用，确定
+# 关闭 konsole 窗口 
+```
+
+- 然后打开 yakuake 进行配置
+
+```bash
+cd ~/.config
+
+ls | grep konsolerc
+# 若输出 konsolerc，则执行
+rm konsolerc
+
+ls | grep yakuakerc
+# 若输出 yakuakerc，则执行
+rm yakuakerc
+
+# 最后：将我自用的配置文件 yakuakerc 和 konsolerc 放到当前目录下
+# 重启 yakuake 应用进程 或者 注销电脑 或者重启电脑
+```
+
 #### 软件包管理器 pacman
 
 > 顾名思义，你可以使用软件包管理器来下载，安装，卸载软件
