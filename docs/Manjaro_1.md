@@ -31,6 +31,8 @@ chsh -s /bin/zsh
 
 > 笔者自用
 
+<img src="https://gitee.com/pj-l/imgs-1/raw/master/image-20220316203229602.png" alt="image-20220316203229602" style="zoom:50%;" />
+
 - 首先将相关配置文件下载到本地，See [here](https://github.com/Brannua/dot-files/tree/master/konsole-yakuake-cfg)
 
 - 然后打开 konsole 进行配置
