@@ -174,6 +174,14 @@ yay -S visual-studio-code-bin
 
 - [scrcpy，跨平台的多屏协同解决方案](https://liupj.top/2022/02/26/practise/display-android-screen-to-manjaro-pc/)
 
+#### 微信开发者工具
+
+- See [there](https://github.com/cytle/wechat_web_devtools)
+
+```bash
+yay -S aur/wechat-devtools
+```
+
 #### 一些有意思的小程序
 
 ```bash
