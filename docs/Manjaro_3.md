@@ -112,7 +112,17 @@ yay -Rssn xf86-video-intel
 -n, --nosave         删除配置文件
 ```
 
-- simplescreenrecorder 已经完全满足我的需求，你也可以从 aur 中搜索 OBS（一款录屏，直播串流工具）或 DaVinciResolve（一款剪辑，调色，特效一体的视频产出软件）
+#### 直播软件
+
+```bash
+sudo pacman -S obs-studio
+```
+
+#### 视频产出软件（剪辑、调色、特效）
+
+```bash
+yay -S davinci-resolve
+```
 
 #### 资料文件的存储（~~网盘~~）
 
