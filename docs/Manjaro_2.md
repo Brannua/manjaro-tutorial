@@ -86,15 +86,15 @@ yay -S community/touche
 
 > 接下来重启电脑，然后运行应用程序 touche，自由设置手势操作吧～
 
-![](https://gitee.com/pj-l/imgs-1/raw/master/image-20220304102852504.png)
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/by-picgo/image-20220304102852504.png)
 
-![](https://gitee.com/pj-l/imgs-1/raw/master/2-四指轻扫（向上多桌面平铺、向下单桌面平铺、切换桌面）.png)
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/2-四指轻扫（向上多桌面平铺、向下单桌面平铺、切换桌面）.png)
 
-![](https://gitee.com/pj-l/imgs-1/raw/master/3-双指捏合缩放.png)
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/3-双指捏合缩放.png)
 
-![](https://gitee.com/pj-l/imgs-1/raw/master/4-三指捏合显示所有应用程序.png)
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/4-三指捏合显示所有应用程序.png)
 
-![](https://gitee.com/pj-l/imgs-1/raw/master/5-轻敲默认.png)
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/5-轻敲默认.png)
 
 #### 配置你的 vim，让它更好用
 
