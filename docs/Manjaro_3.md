@@ -146,6 +146,12 @@ yay -S typora
 
 - 我使用的主题配置：将[这个文件](https://github.com/Brannua/dot_files/tree/master/typora_themes)移动到`～/.config/Typora/themes/`下，重启 typora 选择该主题即可
 
+#### 阿里云对象存储浏览器 oss-browser
+
+```bash
+yay -S oss-browser-bin
+```
+
 #### 图形化代码编辑器
 
 ```bash
