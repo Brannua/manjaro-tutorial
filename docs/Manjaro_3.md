@@ -70,7 +70,7 @@ sudo pacman -S flameshot
 - 注意：WPS 为专有软件，不推荐使用
 
 ```bash
-yay -S onlyoffice-bin
+sudo pacman -S onlyoffice-desktopeditors
 
 sudo pacman -S libreoffice-still   # 稳定版
 sudo pacman -S libreoffice-fresh   # 尝鲜版
@@ -79,7 +79,7 @@ sudo pacman -S libreoffice-fresh   # 尝鲜版
 #### 腾讯会议
 
 ```bash
-yay -S aur/wemeet-bin
+yay -S wemeet-bin
 ```
 
 #### 相机
@@ -132,11 +132,15 @@ yay -S davinci-resolve
 
 > yesplaymusic 是一款开源免费曲库齐全的高颜值第三方音乐播放器，本软件具有网页在线版[预览戳此](https://music.qier222.com/)
 
-```bash
-yay -S yesplaymusic
-```
+- 推荐使用 .AppImage file
 
 - 若无法登录网易云音乐账号，则可尝试使用网易邮箱进行登陆
+
+#### appimagelauncher
+
+```bash
+sudo pacman -S appimagelauncher
+```
 
 #### 使用 markdown 语法的图形化文本编辑器 Typora
 
@@ -195,7 +199,7 @@ yay -S visual-studio-code-bin
 - See [there](https://github.com/cytle/wechat_web_devtools)
 
 ```bash
-yay -S aur/wechat-devtools
+yay -S wechat-devtools
 ```
 
 #### 一些有意思的小程序

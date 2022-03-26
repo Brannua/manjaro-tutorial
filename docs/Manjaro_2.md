@@ -81,7 +81,7 @@ sudo pacman -S diff-so-fancy
 - 第三步，安装图形化客户端 [touche](https://github.com/JoseExposito/touche)，更方便地配置手势
 
 ```bash
-yay -S community/touche
+sudo pacman -S touche
 ```
 
 > 接下来重启电脑，然后运行应用程序 touche，自由设置手势操作吧～
