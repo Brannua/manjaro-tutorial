@@ -49,6 +49,7 @@
   - [Github](https://github.com/)
   - [Google](https://www.google.com/)
   - [必应](https://www.bing.com/)
+  - [stackoverflow](https://stackoverflow.com/)
   - ~~[Baidu](https://www.baidu.com/)~~，百度真的算了吧，LJ
   - ~~问我~~
   - 使用 linux 需要一定的问题处理能力，不适合伸手党使用
