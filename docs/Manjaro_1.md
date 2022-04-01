@@ -72,6 +72,8 @@ rm yakuakerc
 sudo pacman -S tmux
 ```
 
+- github/.tmux: https://github.com/gpakosz/.tmux
+
 #### 软件包管理器 pacman
 
 > 顾名思义，你可以使用软件包管理器来下载，安装，卸载软件
