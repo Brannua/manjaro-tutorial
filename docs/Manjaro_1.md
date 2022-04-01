@@ -70,6 +70,16 @@ rm yakuakerc
 
 ```bash
 sudo pacman -S tmux
+
+--- Let us make tmux "remember" the current working directory of the current pane while creating new pane/window ---
+
+cd ~
+
+vim .tmux.conf
+
+bind-key c new-window -c "#{pane_current_path}"
+bind-key % split-window -h -c "#{pane_current_path}"
+bind-key '"' split-window -c "#{pane_current_path}"
 ```
 
 - github/.tmux: https://github.com/gpakosz/.tmux
