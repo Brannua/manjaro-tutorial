@@ -66,6 +66,12 @@ rm yakuakerc
 # 重启 yakuake 应用进程 或者 注销电脑 或者重启电脑
 ```
 
+#### 终端复用器
+
+```bash
+sudo pacman -S tmux
+```
+
 #### 软件包管理器 pacman
 
 > 顾名思义，你可以使用软件包管理器来下载，安装，卸载软件
