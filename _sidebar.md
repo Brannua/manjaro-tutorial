@@ -1,4 +1,5 @@
 - [简介](/)
-- [第 1 节](/docs/Manjaro_1.md)
-- [第 2 节](/docs/Manjaro_2.md)
-- [第 3 节](/docs/Manjaro_3.md)
+- [基本设置](/docs/1.md)
+- [常用软件](/docs/2.md)
+- [必知必会](/docs/3.md)
+- [常见问题](/docs/4.md)
