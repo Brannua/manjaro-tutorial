@@ -1,211 +1,204 @@
-> 默认你已经设置好并开启了系统代理，能够以可用的网速科学上网
+> 本节介绍好用的应用软件，先科学上网啊喂
 
-<!-- more -->
+#### 注意，你有可能遇到程序启动器搜索不到新安装的应用软件的问题，解决办法如下
 
-#### Git，迄今最好用的版本控制工具
-
-> 无论你是文字工作者，程序员或其他行业的从业者，Git 都能成为你的好帮手，官方文档[戳此](https://git-scm.com/)，本教程不讲解 Git，但它仍然值得你尝试
-
-- manjaro 自带 Git，在终端中执行如下一条命令即可验证（会输出 Git 的版本号）
+> 注：最新操作系统已经弥补了这个 BUG
 
 ```bash
-git --version
+mkdir ~/.local/share/applications
 ```
 
-- 要使用 Git，至少需要做以下的配置才能用得舒服
+#### 全局文件搜索
+
+> 全功能 krunner 配合 fsearch（krunner 在文件搜索功能上做得不如 fsearch，毕竟前者功能丰富，后者更专于文件搜索）
 
 ```bash
-# 告诉 git 你是谁
-git config --global user.name "your_name"
-
-# 告诉 git 你的邮箱，git 会将重要的消息发送到你的邮箱
-git config --global user.email "your_email@domain.com"
-
-# 将 git 默认使用的 nano 编辑器更换为 vim
-git config --global core.editor vim
-
-# 防止 git 输出的中文乱码
-git config --global core.quotepath false
-
-# 指定 git 使用的分页器，可设置为 more 或任何你喜欢的分页器（默认用的是 less），当然你也可以什么都不用，比如像下面这样设置为空字符串
-git config --global core.pager ''
-
-# 将新仓库的初始分支名设置为 master
-git config --global init.defaultBranch master
-
-# （可选，我就先不设置了～）限制 git 的单次提交最大数据量，1MB==1048576Byte
-git config --global http.postBuffer 1048576
+yay -S fsearch
 ```
 
-- 额外解释一点内容
+- 配置 fsearch 的快捷键，方法为依次找到`系统设置>工作区>快捷键>自定义快捷键`，点击`编辑>新建>全局快捷键>命令/URL`，定义一个新的动作名字为`FSearch`,点击右侧`触发器>快捷键`，当框中的字符显示为`输入...`时，直接按键盘上你想要配置的组合键，笔者这里配置为了`meta+f`，再点击`动作`，命令/URL填写为`/usr/bin/fsearch`，最后`应用`该配置即可
+
+- 终端文件搜索（可选）
 
 ```bash
-# config 的 3 个作用域
-git config --local  # local 只对某个仓库有效，缺省等同于 local
-git config --global # global 对当前用户的所有仓库有效
-git config --system # system 对系统的所有登陆用户有效
-
-# 输出查看 config 的配置，就加 --list
-git config --list --local
-git config --list --global
-git config --list --system
+sudo pacman -S fzf
 ```
 
-#### diff-so-fancy（可选，我暂时不安装了）
-
-> git diff 的替代品
-
-```sh
-# 安装
-sudo pacman -S diff-so-fancy
-```
-
-安装后，参考[官方文档](https://github.com/so-fancy/diff-so-fancy)，将它配置为 Git 的默认 diff 工具就可以了
-
-#### Github，全球最大的代码托管平台
-
-> 这也是我们获取资源的重要途径
-
-- 为了更方便地托管我们的各种文件和各种代码而不需次次都询问我们 github 的账号密码，所以采用配置公私钥非对称加解密的方式让我们本地和 github 通信，这里只记录最简步骤，可参考我的[这篇博文](https://liupj.top/2021/09/28/practise/git-ssh/)
-
-- 从今往后，我们使用 ssh 的方式与 github 通信就不需要密码，因为本地有私钥，云端有公钥，公私钥加解密的方式就已经确保了通信的安全性
-
-#### 自定义触摸板手势操作
-
-> 就像 macos 的触摸板那样方便 ！
-
-- 第一步，see [FAQ](https://github.com/JoseExposito/touchegg#faq)
-
-- 第二步，安装核心程序包 [touchegg](https://github.com/JoseExposito/touchegg)
-
-- 第三步，安装图形化客户端 [touche](https://github.com/JoseExposito/touche)，更方便地配置手势
+#### Chrome 浏览器
 
 ```bash
-sudo pacman -S touche
+yay -S google-chrome
 ```
 
-> 接下来重启电脑，然后运行应用程序 touche，自由设置手势操作吧～
+#### 视频播放器
 
-![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/by-picgo/image-20220304102852504.png)
+- 本地视频播放器：相比于 vlc，我更喜欢 mpv
 
-![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/2-四指轻扫（向上多桌面平铺、向下单桌面平铺、切换桌面）.png)
+```bash
+sudo pacman -S mpv
+```
 
-![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/3-双指捏合缩放.png)
+|      | mpv 播放器常用快捷键 | 功能                     |
+| ---- | -------------------- | ------------------------ |
+| 1    | [ ]                  | 调节播放速度，step: 10%  |
+| 2    | Q                    | 退出，但保存当前播放位置 |
+| 3    | m                    | 静音                     |
+| 4    | 9 0                  | 调节音量                 |
+| 5    | f，或双击播放区域    | 全屏切换                 |
+| 6    | v                    | 控制字幕显隐             |
+| 7    | s                    | 截屏                     |
+| 8    | S                    | 截屏（不截字幕）         |
+| 9    | f8                   | 显示播放列表             |
+| 10   | 1 2                  | 对比度调节               |
+| 11   | 3 4                  | 亮度调节                 |
 
-![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/4-三指捏合显示所有应用程序.png)
+#### 截图软件
 
-![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/5-轻敲默认.png)
+```bash
+sudo pacman -S flameshot
+```
 
-#### 配置你的 vim，让它更好用
+- 配置 flameshot 的快捷键，方法为依次找到`系统设置>工作区>快捷键>自定义快捷键`，点击`编辑>新建>全局快捷键>命令/URL`，定义一个新的动作名字为`FlameShot`,点击右侧`触发器>快捷键`，当框中的字符显示为`输入...`时，直接按键盘上你想要配置的组合键，笔者这里配置为了单键`f1`，再点击`动作`，配置命令/URL为`/usr/bin/flameshot gui`，最后`应用`该配置即可
+- 将 flameshot 设置为开机自启，方法为依次找到`系统设置>工作区>开机与关机>自动启动>添加>添加应用`，搜索`火焰截图`或`flameshot`，然后选中，`确定`即可
 
-- 只需将我的[配置文件](https://github.com/Brannua/dot_files/blob/master/.vimrc)拷贝到你的家目录下，然后重启 vim 即可
+- 运行 flameshot，在系统托盘中右键 flameshot，依次点击`配置>快捷键`，将`复制选择到剪贴板`对应的`键`修改为回车键即可
+- 注意：若 flameshot 按下回车进行截图时桌面卡住，则可能是因为没有打开桌面通知，可查看系统托盘
 
-#### AUR
+#### office
 
-> manjaro 基于 arch，而 arch 有一个软件托管平台叫 aur（arch-user-repository），其中几乎包含了你所有想要的软件包，既有官方维护的也有社区维护的
-> 
-> 我们可以使用 yay + pacman 的方式安装软件包 => [为什么不推荐使用 yay 安装非 AUR 软件包？](https://www.bilibili.com/read/cv11518630/) & [yay 作者的回复](https://github.com/Jguer/yay/issues/1601)
+- 注意：WPS 为专有软件，不推荐使用
+
+```bash
+sudo pacman -S libreoffice-still
+```
+
+#### 腾讯会议
+
+```bash
+yay -S wemeet-bin
+```
+
+#### 相机
+
+```bash
+sudo pacman -S kamoso
+```
+
+#### 画图，图片编辑工具
+
+```bash
+sudo pacman -S kolourpaint    # windows 上 「画板」 的替代品，专为 KDE 而生
+sudo pacman -S krita          # 功能更高级，面向对绘画软件有较高要求的专业用户
+```
+
+#### 录屏软件
+
+```bash
+sudo pacman -S simplescreenrecorder
+```
+
+- 华硕vm520u商务笔记本电脑需要卸载核显驱动以解决录屏时屏幕闪烁撕裂的问题
+
+```bash
+yay -Rssn xf86-video-intel
+
+# 解释
+-R, --remove         删除软件包
+-s, --recursive      删除不需要的依赖关系(-ss 包括单独指定安装的依赖关系)
+-n, --nosave         删除配置文件
+```
+
+#### 直播软件
+
+```bash
+sudo pacman -S obs-studio
+```
+
+#### 视频产出软件（剪辑、调色、特效）
+
+```bash
+yay -S davinci-resolve
+```
+
+#### 资料文件的存储（~~网盘~~）
+
+- [唠一唠国内的网盘服务，数据存储方案的探索](https://liupj.top/2022/02/26/practise/data-storage/)
+
+#### 音乐播放器
+
+> yesplaymusic 是一款开源免费曲库齐全的高颜值第三方音乐播放器，本软件具有网页在线版[预览戳此](https://music.qier222.com/)
+
+- 推荐使用 .AppImage file
+
+- 若无法登录网易云音乐账号，可尝试使用网易邮箱进行登陆
+
+#### appimagelauncher
+
+```bash
+sudo pacman -S appimagelauncher
+```
+
+#### 使用 markdown 语法的图形化文本编辑器 Typora
+
+```bash
+yay -S typora
+```
+
+- 我使用的主题配置：将[这个文件](https://github.com/Brannua/dot_files/tree/master/typora_themes)移动到`～/.config/Typora/themes/`下，重启 typora 选择该主题即可
+
+#### 阿里云对象存储浏览器 oss-browser
+
+```bash
+yay -S oss-browser-bin
+```
+
+#### 图形化代码编辑器
+
+```bash
+yay -S visual-studio-code-bin
+```
+
+- [我的配置](https://github.com/Brannua/dot_files/tree/master/vscode)
+
+#### 实用的小部件
+
+> KDE 拥有一套非常好用的小部件，同过鼠标右键桌面，点击添加部件就可以看到系统自带了好多小部件，你也可以将网络上其他开发者开发的小部件下载安装到你的系统上，这里推荐两个我觉得很好用的小部件（小部件商城的网速有时不稳定，如果一直转圈，可尝试在确保自身网络环境较好的情况下，关闭或开启 VPN 再尝试搜索安装小部件）
+
+- Event Calendar（一款集时钟，计时器，日历，天气预报于一体的小部件），下载安装好后右键部件拖到桌面或桌面底部的面板上，并给该部件配置你所在城市的 Id
+- Netspeed Widget（实时监控当前的网络速度）
+- 蕃茄钟：https://gitlab.com/divinae/focus-plasmoid/
+
+#### 手机和电脑沟通的利器 kde-connect
+
+- [官方文档](https://userbase.kde.org/KDEConnect/zh-hans#.E5.AE.89.E8.A3.85)
+
+> 为了解决 Android 和 KDE 之间的文件互传，我接触了 kde-connect，但文件互传只是它众多实用功能的其中之一
 >
-> yay 在底层上很多做法是能用 pacman 就用 pacman 的，yay 的作者主要是在 pacman 的基础上增加了 aur helper 的能力，并尽力做到接口上的统一
->
-> 让 yay 能够替代 pacman 的确是 yay 作者的目标，但至少目前来看，直接用 yay 替代 pacman 仍稍显激进
->
-> `因此：比较推荐的做法是，能用 pacman 就用 pacman，把 yay 作为备选手段`
+> 这款软件是 KDE 自带的，电脑端无需安装
+
+- 我们需要在安卓手机上安装客户端 kde-connect
+  - 首先在手机上下载并安装开源应用商店[F-Droid](https://f-droid.org/)
+  - 然后从该应用商店中搜索并下载安装 kde-connect
+
+- 手机端和电脑端的 kde-connect 进行配对连接，两端即可正常通信
+  - 比如，配对后，进入手机相册，长按图片分享，即可发送给电脑
+- 注意
+  - Android 9 以后不让后台应用直接访问剪贴板了，必须用户手动从通知栏主动发送剪贴板内容到电脑
+  - 插件设置列表的某些插件可以通过点击其名称跳转到该插件的设置页面
+  - 一旦切换系统网络代理，就需要重新配对
+
+#### 投屏工具
+
+- [scrcpy，跨平台的多屏协同解决方案](https://liupj.top/2022/02/26/practise/display-android-screen-to-manjaro-pc/)
+
+#### 微信开发者工具
+
+- See [there](https://github.com/cytle/wechat_web_devtools)
 
 ```bash
-# 安装 yay
-sudo pacman -S yay
+yay -S wechat-devtools
 ```
 
-#### node.js 环境
+#### 桌面特效
 
-- See [nvm、node.js、npm、nrm](https://liupj.top/2022/03/14/practise/nvm-nodejs-npm-nrm/)
-
-#### 配置你的 zsh，让它更好用
-
-- 首先安装[ohmyzsh](https://ohmyz.sh/)，用过的都说好
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-#### 完善解压缩工具 ark
-
-```bash
-sudo pacman -S unzip unrar lzop lrzip
-```
-
-#### 好用的第三方软件包
-
-```bash
-sudo pacman -S tree
-```
-```bash
-sudo pacman -S exa # 替代 ls
-```
-```bash
-sudo pacman -S htop # 管理进程
-```
-```bash
-sudo pacman -S bat # 分页器
-```
-```bash
-sudo pacman -S procs # 替代 ps
-```
-```bash
-sudo pacman -S ripgrep # 替代 grep
-```
-
-#### ranger（可选）
-
-> 装B神器，我就暂时不安装了
-
-- rangerWiki：https://github.com/ranger/ranger/wiki/
-
-```bash
-sudo pacman -S ranger
-```
-
-- 让 ranger 可以预览图片：https://github.com/ranger/ranger/wiki/Image-Previews#with-ueberzug
-
-```bash
-sudo pacman -S ueberzug
-
-mkdir -p ~/.config/ranger
-
-vim ~/.config/ranger/rc.conf
-
-# 写入以下配置保存退出即可
-set preview_images true
-set preview_images_method ueberzug
-```
-
----
-
-- 按照官方文档下载下面两个软件包
-  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
-  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-- 然后按照[这个](https://github.com/Brannua/cowsay_words/blob/master/README.md)进行配置（终端老牛讲单词）
-
-- 配置终端翻译工具，参考：[youdao-cli-translator](https://github.com/tsq/youdao-cli-translator#%E5%AE%89%E8%A3%85)
-
-```bash
-sudo npm i -g youdao-cli-translator
-```
-
-- YOUDAO_APP_ID 和 YOUDAO_APP_KEY 获取方法参考[这里](https://github.com/tsq/youdao-cli-translator#%E5%9C%A8%E6%9C%89%E9%81%93%E6%99%BA%E4%BA%91%E4%B8%8A%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8)
-
-- 最后将我的[配置文件](https://github.com/Brannua/dot_files/blob/master/.zshrc)拷贝到你的家目录下，配置好 YOUDAO_APP_ID 和 YOUDAO_APP_KEY 然后重启 vim 即可
-
-#### 开启多线程下载以提高下载软件的速率（可选，我要 ！）
-
-```bash
-sudo pacman -S axel
-
-sudo vim /etc/pacman.conf
-
-# 将 XferCommand = /usr/bin/wget --passive-ftp -c -O %o %u 替换为如下，然后保存退出
-XferCommand = /usr/bin/axel -o %o %u
-```
-
-- 从此以后，你的下载就使用了多线程！
+- 自行配置

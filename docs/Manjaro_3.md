@@ -1,217 +1,144 @@
-> 本节介绍好用的应用软件，先科学上网啊喂
+> 本节介绍一些作为一个 linux 用户应该知道的东西，先科学上网啊喂
 
-<!-- more -->
-
-#### 注意，你有可能遇到程序启动器搜索不到新安装的应用软件的问题，解决办法如下
-
-> 注：最新操作系统已经弥补了这个 BUG
+#### 怎么查一个命令属于哪个软件包呢 ？
 
 ```bash
-mkdir ~/.local/share/applications
+# pacman
+sudo pacman -F commandName
+
+# aur
+yay -F commandName
 ```
 
-#### 全局文件搜索
+#### 查看一个命令的使用方式
 
-> 全功能 krunner 配合 fsearch（krunner 在文件搜索功能上做得不如 fsearch，毕竟前者功能丰富，后者更专于文件搜索）
+> 再往下的命令大多只给关键词，具体用法自行按照此处介绍的 3 种方式查阅使用手册
 
 ```bash
-yay -S fsearch
+sudo pacman -S tldr
+
+# 查询高频用法（二八原则）
+tldr command
+
+# 查询用法清单
+command --help
+
+# 查询详细用法清单
+man command
 ```
 
-- 配置 fsearch 的快捷键，方法为依次找到`系统设置>工作区>快捷键>自定义快捷键`，点击`编辑>新建>全局快捷键>命令/URL`，定义一个新的动作名字为`FSearch`,点击右侧`触发器>快捷键`，当框中的字符显示为`输入...`时，直接按键盘上你想要配置的组合键，笔者这里配置为了`meta+f`，再点击`动作`，命令/URL填写为`/usr/bin/fsearch`，最后`应用`该配置即可
-
-- 终端文件搜索（可选）
+#### 查看当前使用的电脑的详细硬件配置信息
 
 ```bash
-sudo pacman -S fzf
+# 法一：以图形化的方式查看 cpu 与 显卡 的详细参数可使用如下两款软件
+cpu-x gpu-viewer
+
+# 法二：在终端中输出较完整的硬件参数信息
+dmidecode
 ```
 
-#### Chrome 浏览器
+#### 磁盘格式化
 
 ```bash
-yay -S google-chrome
-sudo pacman -S kdialog # chrome 的可选依赖
+# 法一：以图形化的方式格式化磁盘使用 KDE 自带的软件：KDE分区管理器
+
+# 法二：在终端中对磁盘进行格式化操作
+sudo fdisk -l 						# 查看磁盘
+sudo umount /dev/sdx 			# 卸载磁盘
+sudo mkfs.ext4 /dev/sdx   # 格式化磁盘为 ext4 格式（适用于 linux 操作系统）
 ```
 
-#### 视频播放器
-
-- 本地视频播放器：相比于 vlc，我更喜欢 mpv
+#### 磁盘操作
 
 ```bash
-sudo pacman -S mpv
+# 列出设备信息
+lsblk
+
+# 磁盘挂载方式
+mkdir /mnt/mountPoint
+mount
+
+# 磁盘分区管理
+fdisk
 ```
 
-|      | mpv 播放器常用快捷键 | 功能                     |
-| ---- | -------------------- | ------------------------ |
-| 1    | [ ]                  | 调节播放速度，step: 10%  |
-| 2    | Q                    | 退出，但保存当前播放位置 |
-| 3    | m                    | 静音                     |
-| 4    | 9 0                  | 调节音量                 |
-| 5    | f，或双击播放区域    | 全屏切换                 |
-| 6    | v                    | 控制字幕显隐             |
-| 7    | s                    | 截屏                     |
-| 8    | S                    | 截屏（不截字幕）         |
-| 9    | f8                   | 显示播放列表             |
-| 10   | 1 2                  | 对比度调节               |
-| 11   | 3 4                  | 亮度调节                 |
-
-#### 截图软件
+#### 查看当前磁盘的使用情况
 
 ```bash
-sudo pacman -S flameshot
+# 法一：以图形化的方式查看当前磁盘的使用情况可使用如下一款软件
+filelight
+
+# 法二：在终端中输出当前磁盘的使用情况
+df
 ```
 
-- 配置 flameshot 的快捷键，方法为依次找到`系统设置>工作区>快捷键>自定义快捷键`，点击`编辑>新建>全局快捷键>命令/URL`，定义一个新的动作名字为`FlameShot`,点击右侧`触发器>快捷键`，当框中的字符显示为`输入...`时，直接按键盘上你想要配置的组合键，笔者这里配置为了单键`f1`，再点击`动作`，配置命令/URL为`/usr/bin/flameshot gui`，最后`应用`该配置即可
-- 将 flameshot 设置为开机自启，方法为依次找到`系统设置>工作区>开机与关机>自动启动>添加>添加应用`，搜索`火焰截图`或`flameshot`，然后选中，`确定`即可
-
-- 运行 flameshot，在系统托盘中右键 flameshot，依次点击`配置>快捷键`，将`复制选择到剪贴板`对应的`键`修改为回车键即可
-- 注意：若 flameshot 按下回车进行截图时桌面卡住，则可能是因为没有打开桌面通知，可查看系统托盘
-
-#### office
-
-- 主要有两种选择，onlyoffice（AUR） 和 LibreOffice
-
-- 我更喜欢 onlyoffice
-
-- 注意：WPS 为专有软件，不推荐使用
+#### 查看内存的使用情况
 
 ```bash
-sudo pacman -S onlyoffice-desktopeditors
-
-sudo pacman -S libreoffice-still   # 稳定版
-sudo pacman -S libreoffice-fresh   # 尝鲜版
+free
 ```
 
-#### 腾讯会议
+| 1    | total      | 系统总的可用物理内存大小                               |
+| ---- | ---------- | ------------------------------------------------------ |
+| 2    | used       | 已被使用的物理内存大小                                 |
+| 3    | free       | 真正尚未被使用的物理内存大小                           |
+| 4    | shared     | 被共享使用的物理内存大小                               |
+| 5    | buff/cache | 被 buffer 和 cache 使用的物理内存大小                  |
+| 6    | available  | 可以被`应用程序`使用的物理内存大小 ≈ free + buff/cache |
+
+> 操作系统为了提升读写性能（缓解 CPU 和磁盘之间的速度差距），会消耗一部分内存资源缓存磁盘数据，对于系统内核而言，buff/cache 属于已经被使用了的内存，但当应用程序申请内存时，如果 free 不够，操作系统内核就会从 buff/cache 回收内存资源提供给应用程序使用
+
+#### 系统服务
+
+> Linux 系统中运行着各种服务，需要我们掌握服务的增删改查方式，这里讲述`systemctl`的用法，以`dhcpcd`为例
 
 ```bash
-yay -S wemeet-bin
+systemctl start dhcpcd            # 启动服务
+systemctl stop dhcpcd             # 停止服务
+systemctl restart dhcpcd          # 重启服务
+systemctl reload dhcpcd           # 重新加载服务以及它的配置文件
+systemctl status dhcpcd           # 查看服务状态
+systemctl enable dhcpcd           # 设置服务开机自启
+systemctl enable --now dhcpcd     # 设置服务开机自启并立即启动这个单元
+systemctl disable dhcpcd          # 取消服务的开机自启
+systemctl daemon-reload dhcpcd    # 重新载入 systemd 配置 扫描新增或变更的服务单元 不会重新加载变更的配置 加载变更的配置用 reload
 ```
 
-#### 相机
+#### 进程管理
 
 ```bash
-sudo pacman -S kamoso
+# 进程输出（静态）
+ps
+
+# 进程监控（动态）
+top
+
+# 杀死某个 PID 对应的进程
+kill PID
 ```
 
-#### 画图，图片编辑工具
+#### 文件权限管理
 
 ```bash
-sudo pacman -S kolourpaint    # windows 上 「画板」 的替代品，专为 KDE 而生
-sudo pacman -S krita          # 功能更高级，面向对绘画软件有较高要求的专业用户
+chown
 ```
 
-#### 录屏软件
+#### 系统字体管理
 
 ```bash
-sudo pacman -S simplescreenrecorder
+fc-list
 ```
 
-- 华硕vm520u商务笔记本电脑需要卸载核显驱动以解决录屏时屏幕闪烁撕裂的问题
+#### 系统备份
 
 ```bash
-yay -Rssn xf86-video-intel
-
-# 解释
--R, --remove         删除软件包
--s, --recursive      删除不需要的依赖关系(-ss 包括单独指定安装的依赖关系)
--n, --nosave         删除配置文件
+sudo pacman -S timeshift
 ```
 
-#### 直播软件
-
-```bash
-sudo pacman -S obs-studio
-```
-
-#### 视频产出软件（剪辑、调色、特效）
-
-```bash
-yay -S davinci-resolve
-```
-
-#### 资料文件的存储（~~网盘~~）
-
-- [唠一唠国内的网盘服务，数据存储方案的探索](https://liupj.top/2022/02/26/practise/data-storage/)
-
-#### 音乐播放器
-
-> yesplaymusic 是一款开源免费曲库齐全的高颜值第三方音乐播放器，本软件具有网页在线版[预览戳此](https://music.qier222.com/)
-
-- 推荐使用 .AppImage file
-
-- 若无法登录网易云音乐账号，则可尝试使用网易邮箱进行登陆
-
-#### appimagelauncher
-
-```bash
-sudo pacman -S appimagelauncher
-```
-
-#### 使用 markdown 语法的图形化文本编辑器 Typora
-
-```bash
-yay -S typora
-```
-
-- 我使用的主题配置：将[这个文件](https://github.com/Brannua/dot_files/tree/master/typora_themes)移动到`～/.config/Typora/themes/`下，重启 typora 选择该主题即可
-
-#### 阿里云对象存储浏览器 oss-browser
-
-```bash
-yay -S oss-browser-bin
-```
-
-#### 图形化代码编辑器
-
-```bash
-yay -S visual-studio-code-bin
-```
-
-- [我的配置](https://github.com/Brannua/dot_files/tree/master/vscode)
-
-#### 实用的小部件
-
-> KDE 拥有一套非常好用的小部件，同过鼠标右键桌面，点击添加部件就可以看到系统自带了好多小部件，你也可以将网络上其他开发者开发的小部件下载安装到你的系统上，这里推荐两个我觉得很好用的小部件（小部件商城的网速有时不稳定，如果一直转圈，可尝试在确保自身网络环境较好的情况下，关闭或开启 VPN 再尝试搜索安装小部件）
-
-- Event Calendar（一款集时钟，计时器，日历，天气预报于一体的小部件），下载安装好后右键部件拖到桌面或桌面底部的面板上，并给该部件配置你所在城市的 Id
-- Netspeed Widget（实时监控当前的网络速度）
-
-#### 手机和电脑沟通的利器 kde-connect
-
-- [官方文档](https://userbase.kde.org/KDEConnect/zh-hans#.E5.AE.89.E8.A3.85)
-
-> 为了解决 Android 和 KDE 之间的文件互传，我接触了 kde-connect，但文件互传只是它众多实用功能的其中之一
+> 准备一个被格式化为 ext4 类型的[文件系统](https://liupj.top/2022/02/03/knowledge/os/fileSys/)，使用 RSYNC 模式进行备份
 >
-> 这款软件是 KDE 自带的，电脑端无需安装
+> 强调：及时合理地备份是个好习惯，能救命的好习惯！
 
-- 我们需要在安卓手机上安装客户端 kde-connect
-  - 首先在手机上下载并安装开源应用商店[F-Droid](https://f-droid.org/)
-  - 然后从该应用商店中搜索并下载安装 kde-connect
+#### 结语
 
-- 手机端和电脑端的 kde-connect 进行配对连接，两端即可正常通信
-  - 比如，配对后，进入手机相册，长按图片分享，即可发送给电脑
-- 注意
-  - Android 9 以后不让后台应用直接访问剪贴板了，必须用户手动从通知栏主动发送剪贴板内容到电脑
-  - 插件设置列表的某些插件可以通过点击其名称跳转到该插件的设置页面
-  - 一旦切换系统网络代理，就需要重新配对
-
-#### 投屏工具
-
-- [scrcpy，跨平台的多屏协同解决方案](https://liupj.top/2022/02/26/practise/display-android-screen-to-manjaro-pc/)
-
-#### 番茄钟（小部件）
-
-- https://gitlab.com/divinae/focus-plasmoid/
-
-#### 微信开发者工具
-
-- See [there](https://github.com/cytle/wechat_web_devtools)
-
-```bash
-yay -S wechat-devtools
-```
-
-#### 桌面特效
-
-- 自行配置
+恭喜，你看到了结语，希望本教程对你有所帮助，作为计算机专业的学生，我是因为 windows 使用体验确实一般，并且十分羡慕同学的苹果电脑，所以才接触到了 linux，但是 linux 却打开了我新世界的大门，和 macos 同属于 unix 操作系统的 linux，尤其是 archlinux 和基于 archlinux 的一众发行版，都具有极高的可自定义程度，linux 是个神奇的东西，你越是好奇花的时间越长，就对它越了解，同时你也越能发现你所不知道的东西越多，你也渐渐学到了很多，收获了很多，就像本教程开头所讲的各种 linux 独有的优点，同时你也在变得与众不同，正是这种与众不同，满足我的虚荣心更带给我成就感和愉悦感，我也相信这种不同会在不经意间给我提供帮助，给我增加可能性。致敬 linux 的缔造者 [Linus](https://baike.baidu.com/item/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%9C%AC%E7%BA%B3%E7%AC%AC%E5%85%8B%E7%89%B9%C2%B7%E6%89%98%E7%93%A6%E5%85%B9/1034429)，感谢 linux 社区和网络上的大佬们，让我这个小白可以如此受益。

@@ -1,3 +1,9 @@
+#### KRunner
+
+- 一款自带的实用小软件，默认快捷键 alt + space
+
+- 拥有（启动软件、计算器、文件搜索、单位转换、...）等实用功能
+
 #### 调整外设的默认参数
 
 - 系统设置 => 硬件 => 输入设备
@@ -6,25 +12,17 @@
 
   - 鼠标 => 指针速度增加两格 => 应用
 
-#### 终端
+#### 打开终端的 3 种方式
 
-- 打开终端的 3 种方式
+1. f12 => yakuake
 
   - 注意：当你第一次打开 yakuake 的下拉面板，会自动弹窗，询问你是否需要修改打开 yakuake 下拉面板的快捷键
 
   - 推荐将默认的 f12 修改为 meta + space
 
-1. ctrl + alt + t => konsole
-
-2. f12 => yakuake
+2. ctrl + alt + t => konsole
 
 3. meta + e => open dolphin => f4 => terminal
-
-#### KRunner
-
-- 一款自带的实用小软件，默认快捷键 alt + space
-
-- 拥有（启动软件、计算器、文件搜索、单位转换、...）等实用功能
 
 #### 设置软件源 & 更新系统
 
@@ -35,38 +33,59 @@ sudo pacman-mirrors -m rank -c China
 # manjaro 为滚动更新，每隔几天就会有少量系统更新发布，官方 ISO 未必是最新系统
 sudo pacman -Syyu
 
-# 下载安装必要工具集
+# 下载安装必要的工具集
 sudo pacman -S base base-devel
-
-reboot
-
-# 重启进入桌面后，若发现 meta + space 无法调出 yakuake 的命令行界面，则很大概率是你没有将 yakuake 设置为开机自启
-系统设置 => 工作区 => 开机与关机 => 自动启动 => 添加 => 添加应用程序 => 搜索 yakuake 并点击确定
 
 reboot
 ```
 
-> 建议养成每周尝试接收系统更新的习惯，并合理备份，防止由于一次性接收大量更新而可能造成的系统混乱
+- 重启进入桌面后，若发现 meta + space 无法调出 yakuake 的命令行界面，则很大概率是你没有将 yakuake 设置为开机自启
+
+  - 系统设置 => 工作区 => 开机与关机 => 自动启动 => 添加 => 添加应用程序 => 搜索 yakuake 并点击确定 => reboot
+
+> 建议养成每周都执行`sudo pacman -Syyu`命令尝试接收系统更新的习惯，防止由于一次性接收大量更新而可能造成的系统混乱
+
+#### 配置多线程下载
+
+```bash
+sudo pacman -S axel
+sudo vim /etc/pacman.conf
+XferCommand = /usr/bin/axel -o %o %u # 替换 XferCommand = /usr/bin/wget --passive-ftp -c -O %o %u
+```
+
+#### AUR & yay
+
+> manjaro 基于 arch，arch 有一个软件托管平台 aur（arch-user-repository），其中软件包丰富（几乎啥都有），既有官方维护的也有社区维护的
+
+- AUR Helper
+
+```bash
+sudo pacman -S yay
+```
+
+- [Can I just use yay instead of pacman?](https://github.com/Jguer/yay/issues/1601)
+
+- 推荐尽量使用 pacman，将 yay 备用
 
 #### 终端美化
 
 <img src="https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/by-picgo/image-20220316203229602.png" alt="image-20220316203229602" style="zoom:50%;" />
 
-- 将相关配置文件下载到本地，See [here](https://github.com/Brannua/dot-files/tree/master/konsole-yakuake-cfg)
+- 下载[配置文件](https://github.com/Brannua/dot-files/tree/master/konsole-yakuake-cfg/)
 
 - 打开 konsole 进行配置
 
 ```bash
 cd ~/.local/share/konsole
-
 ls -al
 
 # 若有文件输出，则删除所有文件
-# 然下载好的配置文件 Breeze.colorscheme 和 lpj-theme.profile 放到当前目录下
+# 将下载好的配置文件 Breeze.colorscheme 和 lpj-theme.profile 移动到当前目录下
 # 鼠标右键 konsole 窗口，切换编辑方案，选择 lpj-theme
 # 鼠标右键 konsole 窗口，编辑当前方案，勾选「默认配置方案」，应用，确定
-# 关闭 konsole
 ```
+
+- konsole 配置完成，关闭
 
 - 打开 yakuake 进行配置
 
@@ -74,50 +93,110 @@ ls -al
 cd ~/.config
 
 ls | grep konsolerc
-
-# 若输出 konsolerc，则执行
+# 若输出 konsolerc，则
 rm konsolerc
 
 ls | grep yakuakerc
-
-# 若输出 yakuakerc，则执行
+# 若输出 yakuakerc，则
 rm yakuakerc
 
-# 最后：将下载好的配置文件 yakuakerc 和 konsolerc 放到当前目录下
+# 将下载好的配置文件 yakuakerc 和 konsolerc 移动到当前目录下
 
 reboot
 ```
 
-#### 现代化你的终端
+#### 安装 node.js 环境
+
+- See [here](https://liupj.top/2022/03/14/practise/nvm-nodejs-npm-nrm/)
+
+#### 常用工具
 
 ```bash
-# ZShell
+sudo pacman -S tree
+sudo pacman -S exa                    # 替代 ls
+sudo pacman -S bat                    # 一种好用的分页器
+sudo pacman -S ripgrep                # 替代 grep
+sudo pacman -S htop                   # 替代 top
+sudo pacman -S procs                  # 替代 ps
+sudo pacman -S unzip unrar lzop lrzip # 完善解压缩工具 ark
+```
+
+#### zsh
+
+```bash
 chsh -s /bin/zsh
+reboot
+```
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
+- mv [配置文件](https://github.com/Brannua/dot_files/blob/master/.zshrc) to ~/
 
-# editor
+#### vim（终端编辑器）
+
+```bash
 sudo pacman -S vim
+```
 
-# 终端复用器
+- mv [配置文件](https://github.com/Brannua/dot_files/blob/master/.vimrc) to ~/
+
+#### tmux（终端复用器）
+
+```bash
 sudo pacman -S tmux
+```
+
+```bash
 cd ~
 vim .tmux.conf
 
-# 将如下内容加入并保存退出（这样新 pane 就能记住旧 pane 的工作目录啦）
+# 将如下内容写入，保存后退出（这样新 pane 就能记住旧 pane 的工作路径啦）
 bind-key c new-window -c "#{pane_current_path}"
 bind-key % split-window -h -c "#{pane_current_path}"
 bind-key '"' split-window -c "#{pane_current_path}"
-
-# oh-my-tmux（可选）
-https://github.com/gpakosz/.tmux/
 ```
+
+#### 配置 git
+
+- 默认情况下，manjaro 自带 git
+
+```bash
+git --version
+
+git config --global user.name "your_name"               # 告诉 git 你是谁
+git config --global user.email "your_email@domain.com"  # 告诉 git 你的邮箱，git 会将重要的消息发送到你的邮箱
+git config --global init.defaultBranch master           # 告诉 git 将新仓库的初始分支名设为 master
+git config --global core.editor vim                     # 告诉 git 使用 vim
+git config --global core.quotepath false                # 防止中文乱码
+```
+
+- 多解释一些内容
+
+```bash
+git config --local  # local 只对某个仓库有效，缺省等同于 local
+git config --global # global 对当前用户的所有仓库有效
+git config --system # system 对系统的所有登陆用户有效
+
+# 要想查看 config 配置，就加 --list
+```
+
+- [基于 SSH 协议配置本地和云端代码托管平台间的加密通信](https://liupj.top/2021/09/28/knowledge/git/git-ssh/)
+
+  - 私钥放本地，公钥放云端（代码托管平台）
+  
+  - 公私钥非对称加解密的方式确保了通信的安全，也避免了每次和代码托管平台通信都需手动输入密码的麻烦
 
 #### 系统语言 & 中文输入法
 
-- 如果在安装系统时，你选择的是中文系统，那么此时你家目录下的目录名应该都是中文
+- 如果在安装系统时，你选择的是中文系统
+
+- 那么此时你家目录下的目录名应该都是中文
 
 - 但很抱歉，中文不便于我们在终端中进行操作，而且系统并不自带中文输入法
 
-- 故需要将家目录下的目录名由中文改为英文
+- 故需将家目录下的目录名由中文改为英文
 
 > 一个好的习惯是任何文件的命名都使用英文半角，这在大多数操作系统中都能规避很多莫名其妙的软件报错
 
@@ -137,17 +216,10 @@ export LANG=zh_CN.UTF-8
 - 安装配置中文输入法
 
 ```bash
-# 输入法框架 & 输入法引擎
-sudo pacman -S fcitx5-im fcitx5-chinese-addons
+sudo pacman -S fcitx5-im fcitx5-chinese-addons        # 输入法框架 & 输入法引擎
+sudo pacman -S fcitx5-qt fcitx5-gtk fcitx5-configtool # 依赖和配置工具
+sudo pacman -S fcitx5-pinyin-zhwiki                   # 中文维基百科词库
 
-# 依赖和配置工具
-sudo pacman -S fcitx5-qt fcitx5-gtk fcitx5-configtool
-
-# 中文维基百科词库
-sudo pacman -S fcitx5-pinyin-zhwiki
-```
-
-```bash
 vim ~/.pam_environment
 
 # 写入以下配置，保存退出
@@ -155,20 +227,45 @@ GTK_IM_MODULE DEFAULT=fcitx5
 QT_IM_MODULE  DEFAULT=fcitx5
 XMODIFIERS    DEFAULT=\@im=fcitx5
 SDL_IM_MODULE DEFAULT=fcitx5
-```
 
-```bash
 reboot
-
 # 进入桌面后，会被提示是否启用云拼音，点击确定
 # 中英文输入法的切换快捷键默认有 2 种：ctrl + space 或 ctrl + shift
 ```
 
-- 鼠标右键系统托盘键盘指示器，依次点击“配置”，“拼音”，“配置”，确保以下选项被勾选
-
-`启用云拼音`、`在程序中显示预编辑文本`、`在预编辑中显示完整拼音`
+- 鼠标右键系统托盘键盘指示器，依次点击“配置”，“拼音”，“配置”，确保`启用云拼音`、`在程序中显示预编辑文本`、`在预编辑中显示完整拼音`选项被勾选
 
 - 点击“应用” ！
+
+#### 终端老牛讲单词
+
+- See [here](https://github.com/Brannua/cowsay_words/blob/master/README.md)
+
+#### 配置触摸板手势操作
+
+> 就像 macos 的触摸板那样方便 ！
+
+- 第一步，see [FAQ](https://github.com/JoseExposito/touchegg#faq)
+
+- 第二步，安装核心程序包 [touchegg](https://github.com/JoseExposito/touchegg#arch-linux-manjaro-and-derivatives)
+
+- 第三步，安装图形化客户端 [touche](https://github.com/JoseExposito/touche)，更方便地配置手势
+
+```bash
+sudo pacman -S touche
+```
+
+> 接下来重启电脑，然后运行 touche，自由设置手势操作吧～
+
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/by-picgo/image-20220304102852504.png)
+
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/2-四指轻扫（向上多桌面平铺、向下单桌面平铺、切换桌面）.png)
+
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/3-双指捏合缩放.png)
+
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/4-三指捏合显示所有应用程序.png)
+
+![](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/old-from-gitee-2022-03-25/png-mass/5-轻敲默认.png)
 
 #### 常见问题
 
@@ -182,8 +279,3 @@ reboot
 
   - 重启系统，密码认证就已经跳过
 
-#### 查看电脑概要信息
-
-```bash
-neofetch
-```

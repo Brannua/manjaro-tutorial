@@ -2,4 +2,3 @@
 - [第 1 节](/docs/Manjaro_1.md)
 - [第 2 节](/docs/Manjaro_2.md)
 - [第 3 节](/docs/Manjaro_3.md)
-- [第 4 节](/docs/Manjaro_4.md)
