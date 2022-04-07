@@ -200,6 +200,10 @@ yay -S visual-studio-code-bin
 
 - [scrcpy，跨平台的多屏协同解决方案](https://liupj.top/2022/02/26/practise/display-android-screen-to-manjaro-pc/)
 
+#### 番茄钟（小部件）
+
+- https://gitlab.com/divinae/focus-plasmoid/
+
 #### 微信开发者工具
 
 - See [there](https://github.com/cytle/wechat_web_devtools)
