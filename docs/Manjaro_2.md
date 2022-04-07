@@ -120,23 +120,13 @@ sudo pacman -S obs-studio
 yay -S davinci-resolve
 ```
 
-#### 资料文件的存储（~~网盘~~）
-
-- [唠一唠国内的网盘服务，数据存储方案的探索](https://liupj.top/2022/02/26/practise/data-storage/)
-
 #### 音乐播放器
 
 > yesplaymusic 是一款开源免费曲库齐全的高颜值第三方音乐播放器，本软件具有网页在线版[预览戳此](https://music.qier222.com/)
 
-- 推荐使用 .AppImage file
+- 推荐 .AppImage file 配合 appimagelauncher 使用
 
 - 若无法登录网易云音乐账号，可尝试使用网易邮箱进行登陆
-
-#### appimagelauncher
-
-```bash
-sudo pacman -S appimagelauncher
-```
 
 #### 使用 markdown 语法的图形化文本编辑器 Typora
 
@@ -202,3 +192,17 @@ yay -S wechat-devtools
 #### 桌面特效
 
 - 自行配置
+
+#### 系统备份
+
+```bash
+sudo pacman -S timeshift
+```
+
+> 准备一个被格式化为 ext4 类型的[文件系统](https://liupj.top/2022/02/03/knowledge/os/fileSys/)，使用 RSYNC 模式进行备份
+>
+> 强调：及时合理地备份是个好习惯，能救命的好习惯！
+
+#### 文件资料备份（~~网盘~~）
+
+- [唠一唠国内的网盘服务，数据存储方案的探索](https://liupj.top/2022/02/26/practise/data-storage/)
