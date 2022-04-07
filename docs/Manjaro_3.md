@@ -212,22 +212,6 @@ yay -S visual-studio-code-bin
 yay -S wechat-devtools
 ```
 
-#### 一些有意思的小程序
-
-```bash
-# 终端小火车，终端彩色打印
-sudo pacman -S sl lolcat
-
-# 跟随鼠标的小猫咪
-yay -S oneko
-```
-
 #### 桌面特效
 
-- 自行配置，和 KWin 交互
-
-- 如果桌面特效失效
-
-  - 可以尝试降级混成器的渲染后端（success）
-  
-  - 可以尝试升级显卡驱动到稳定版（未尝试）
+- 自行配置
