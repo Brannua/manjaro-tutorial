@@ -34,7 +34,7 @@
 
 3. 如果必须使用专有软件，国内其实不用专有软件还是有点难受的毕竟大家都在用。。但建议在一台没有个人隐私的设备上使用
 
-> 原则：如果没有特别省心省事的成熟解决方案，那么一个软件在哪种操作系统上的官方支持最好，就让它在哪种操作系统上运行，有经济条件的可以购买多台电脑，无则 see [there](https://liupj.top/2022/02/05/practise/multi-os/)
+> 原则：如果没有特别省心省事的成熟解决方案，那么一个软件在哪种操作系统上的官方支持最好，就让它在哪种操作系统上运行，有经济条件的可以购买多台电脑，无则 see [there](https://liupj.top/2022/02/04/multi-os/)
 
 - 还在纠结使用哪种 linux 发行版吗？适合自己的才是最好的：[Distrochooser](https://distrochooser.de/)
 - 本教程选用的 Linux 发行版：[ManjaroLinux](https://manjaro.org/)
@@ -50,9 +50,8 @@
   - [Google](https://www.google.com/)
   - [必应](https://www.bing.com/)
   - [stackoverflow](https://stackoverflow.com/)
-  - ~~[Baidu](https://www.baidu.com/)~~，百度真的算了吧，辣鸡
-  - ~~问我~~
-  - 使用 linux 需要培养锻炼自己的问题处理能力，不适合摆烂伸手党使用
+  - 阅读[Stop-Ask-Questions-The-Stupid-Ways](https://github.com/Brannua/Stop-Ask-Questions-The-Stupid-Ways)之后问我
+  - 拒绝~~[Baidu](https://www.baidu.com/)~~
 
 > 哦天，你是在想如何安装 ManjaroLinux 吗？这是考验你的第一个问题
 >
