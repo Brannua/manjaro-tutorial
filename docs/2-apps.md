@@ -71,3 +71,7 @@ Use [firefox](https://wiki.archlinux.org/title/firefox), instead of ~~google-chr
 
 [Netspeed Widget](https://github.com/dfaust/plasma-applet-netspeed-widget)
 
+#### 磁盘使用情况分析
+
+[filelight](https://archlinux.org/packages/extra/x86_64/filelight)
+

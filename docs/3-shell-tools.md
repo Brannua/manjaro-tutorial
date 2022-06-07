@@ -4,6 +4,13 @@
 >
 > 通常，较好的安装方式是使用发行版的官方包管理工具，比如 pacman
 
+#### manual page
+ 
+| 名称 | 官方网址                           |
+|:-----|:-----------------------------------|
+| tldr | https://github.com/tldr-pages/tldr |
+| man  |                                    |
+
 #### Shell Scripting Language
 
 出于学习的目的，我决定使用更常见更通用兼容性更好的 [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
@@ -13,6 +20,12 @@
 | 名称       | 官方网址                               |
 |:-----------|:---------------------------------------|
 | shellcheck | https://github.com/koalaman/shellcheck |
+
+#### 系统服务管理
+
+| 名称      | 官方网址 |
+|:----------|:---------|
+| systemctl |          |
 
 #### 网络工具
 
@@ -81,4 +94,39 @@
 | 名称       | 官方网址                             |
 |:-----------|:-------------------------------------|
 | efibootmgr | https://github.com/rhboot/efibootmgr |
+
+
+#### 内存监控
+
+使用 `free` 程序
+
+以下为其输出内容的解释
+
+| 序号 | 名称       | 释义                                               |
+|:-----|:-----------|:---------------------------------------------------|
+| 1    | total      | 系统总的可用物理内存大小                           |
+| 2    | used       | 已被使用的物理内存大小                             |
+| 3    | free       | 真正尚未被使用的物理内存大小                       |
+| 4    | shared     | 被共享使用的物理内存大小                           |
+| 5    | buff/cache | 被 buffer 和 cache 使用的物理内存大小              |
+| 6    | available  | 可被应用程序使用的物理内存大小 ≈ free + buff/cache |
+
+对于操作系统而言，buff/cache 属于已经被使用了的内存
+
+但当应用程序申请内存，而 free 的内存不够时，操作系统就会从 buff/cache 回收内存，以提供给应用程序使用
+
+#### 计算机系统信息查询
+
+| 名称        | 官方网址                                              |
+|:------------|:------------------------------------------------------|
+| dmidecode   | https://archlinux.org/packages/extra/x86_64/dmidecode |
+| screenfetch | https://github.com/KittyKatt/screenFetch              |
+| neofetch    | https://github.com/dylanaraps/neofetch                |
+
+#### 磁盘相关工具
+
+| 名称  | 官方网址 |
+|:------|:---------|
+| fdisk |          |
+| lsblk |          |
 
