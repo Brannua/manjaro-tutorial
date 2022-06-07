@@ -59,7 +59,7 @@ reboot
 
 - 重启系统，密码认证就已经跳过
 
-#### 蓝牙耳机已连接但是没有声音
+#### 蓝牙耳机已连接但是没有声音 ？
 
 参考：https://wiki.archlinux.org/title/Bluetooth/
 
