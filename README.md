@@ -61,6 +61,3 @@
 
 > 本教程不提供科学上网教程，但你必须设置系统代理，确保能够以较好的网络速度访问墙外资源，才能顺利实践本教程 ！
 
-#### LICENSE
-
-- [MIT](https://github.com/Brannua/manjaro-tutorial/blob/master/LICENSE)
