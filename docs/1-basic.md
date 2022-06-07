@@ -119,6 +119,13 @@ SDL_IM_MODULE DEFAULT=fcitx5
 
 注销或重启系统，应该就可以输入中文了，输入法切换的快捷键默认为：ctrl+space 或 ctrl+shift
 
+
+#### 开源中文字体及表情
+
+```bash
+sudo pacman -S wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji
+```
+
 #### 配置触摸板手势操作
 
 - 第一步，see [FAQ](https://github.com/JoseExposito/touchegg#faq)
@@ -136,4 +143,3 @@ SDL_IM_MODULE DEFAULT=fcitx5
 ![4-三指捏合显示所有应用程序](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/mass/4-三指捏合显示所有应用程序.png)
 
 ![5-轻敲默认](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/mass/5-轻敲默认.png)
-
