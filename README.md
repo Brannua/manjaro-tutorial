@@ -55,7 +55,7 @@
 
 > 哦天，你是在想如何安装 ManjaroLinux 吗？这是考验你的第一个问题
 >
-> 不过别担心，Just STFW：[Google](https://www.google.com/)
+> 不过别担心，[Google](https://www.google.com/) can proably help you.
 
 #### 注意
 
