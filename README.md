@@ -1,4 +1,6 @@
 
+*本笔记书目前处于测试阶段，书中内容持续重构中：2022-06-10*
+
 > 本笔记书记录我个人上手使用 [ManjaroLinux](https://manjaro.org/) 的过程
 >
 > 参考了 [ManjaroLinux 的官方文档](https://wiki.manjaro.org/index.php/Main_Page)和 [ArchLinux 的官方文档](https://wiki.archlinux.org/)，以及[这个项目](https://github.com/ArchLinuxStudio/ArchLinuxTutorial)
