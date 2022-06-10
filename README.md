@@ -1,5 +1,5 @@
 
-> 本笔记书记录我个人上手使用 ManjaroLinux 的过程
+> 本笔记书记录我个人上手使用 [ManjaroLinux](https://manjaro.org/) 的过程
 >
 > 参考了 [ManjaroLinux 的官方文档](https://wiki.manjaro.org/index.php/Main_Page)和 [ArchLinux 的官方文档](https://wiki.archlinux.org/)，以及[这个项目](https://github.com/ArchLinuxStudio/ArchLinuxTutorial)
 
@@ -15,7 +15,7 @@
 
 但 macOS 不仅价格不菲，且系统闭源
 
-相比而言，Linux 不仅免费，且系统开源，与 GNU 的结合更是让 Linux 如虎添翼
+相比而言，Linux 开源免费、系统稳定流畅（因此世界上大多数企业的服务器都使用 Linux 系统），与 GNU 的结合更是让 Linux 如虎添翼
 
 并且，Linux 在全世界范围拥有庞大且极其活跃的社区和发展到目前（2022）已经相当完善的文档
 
