@@ -1,5 +1,7 @@
 
 > 本笔记书记录我个人上手使用 ManjaroLinux 的过程
+>
+> 参考了 [ManjaroLinux 的官方文档](https://wiki.manjaro.org/index.php/Main_Page)和 [ArchLinux 的官方文档](https://wiki.archlinux.org/)，以及[这个项目](https://github.com/ArchLinuxStudio/ArchLinuxTutorial)
 
 ## 我使用 Linux 的心得
 
