@@ -1,69 +1,102 @@
-#### 注意
 
-本教程适合人群：想要使用 ManjaroLinux 的新手
+> 本笔记书记录我个人上手使用 ManjaroLinux 的过程
 
-本教程最终整理完毕于 2022-06-07，因笔者已自此转向使用 ArchLinux，故本笔记自此静态封存，不再添加新内容，望周知
+## 我使用 Linux 的心得
 
-#### 前言
+#### 为什么使用 Linux，为什么使用 ManjaroLinux
 
-> 本教程旨在：
+你可以将苹果的 macOS 看作是 BSD 的孙子、Unix 的曾孙，而将 Linux 看作 Minix 的徒弟、Unix 的徒孙
 
-1. 整理笔者工作流的搭建过程，以防不时之需
+所以现在比较常见的 macOS 和 Linux 都被称为 UnixLike/类Unix 操作系统
 
-2. 为想要尝试 linux 尤其是 arch 系发行版的新手小伙伴提供帮助
+而对于计算机专业相关的学生和从业者而言，选用 UnixLike/类Unix 操作系统好处多多，无需多言，谁用谁知道
 
-3. 传递开源精神，给 linux 的社区贡献一点点力量
+但 macOS 不仅价格不菲，且系统闭源
 
-> 相比于 windows，linux 带给我的好处有：
+相比而言，Linux 不仅免费，且系统开源，与 GNU 的结合更是让 Linux 如虎添翼
 
-1. linux 对电脑本身的硬件配置要求相对较低，一颗 1Ghz 的 CPU，4GB 内存，128GB 的 SSD 固态硬盘已经满足大多数人的要求（本教程实践结束磁盘占用 13GB 左右）
+并且，Linux 在全世界范围拥有庞大且极其活跃的社区和发展到目前（2022）已经相当完善的文档
 
-2. linux 开源免费，这意味着你可以轻松获取其正版系统并查看甚至修改它的所有源代码
+使用 Linux 不仅是一个探索和学习的过程，更是一个创造和收获的过程，非常有意思
 
-3. linux 拥有十分完善的文档和活跃的社区，你可以轻松查询并处理你所遇到的所有问题
+由于我非常喜欢 Linux 的一个发行版 ArchLinux，包括但不限于其软件包管理器 pacman 和官方文档 ArchWiki 非常好用
 
-4. linux 上安装软件极其方便，往往一两行命令就能很好地将软件下载并安装，且没有任何捆绑软件
+但由于我的笔记本电脑较新，其有 8 个 2G 的内存插槽，这种设计对于 ArchLinux 目前有兼容性问题（目前多于 4 个内存插槽的电脑在安装 ArchLinux 时都会遇到棘手的问题，我暂时没有查询到合适的解决方案）
 
-5. linux 安全稳定，你对你的 linux 系统拥有着绝对掌控权
+尽管你能从安装 ArchLinux 的过程中学到很多东西，是其余很多系统一直点击下一步的系统安装方式所不能比的
 
-6. 什么软件弹窗、系统蓝屏、软件病毒、系统强制更新等各种辣鸡流氓行为在 linux 中我是没见过
+但 ArchLinux 的安装步骤确实复杂繁琐，为了节约时间，所以我选择了现在比较火的一个基于 ArchLinux 且易于安装的系统：ManjaroLinux
 
-7. 你能学到很多酷酷的知识
+同时，由于我目前还割舍不掉 KDEConnect 这个远比微信文件传输助手强大好用的东西，所以仍坚持使用 KDE
 
-8. ……
+另外，当我将 Vim 的生态玩熟练之后，再去慢慢熟悉平铺式窗口管理器这个备受好评的东西吧～
 
-> 虽然 QQ、微信、TIM、office 等专有软件有很多方法在 linux 上运行，但本教程不介绍，原因如下：
+#### 关于专有软件
 
-1. 专有软件不会开放其源代码，这些软件到底会不会在背后动手脚我们不得而知
 
-2. 这些专有软件在 linux 上都有很好的自由软件替代品，比如即时通讯软件 Telegram 以及做得相当棒的社区版 libre-office
+#### 关于系统美化
 
-3. 如果必须使用专有软件，国内其实不用专有软件还是有点难受的毕竟大家都在用。。但建议在一台没有个人隐私的设备上使用
+很多刚接触 Linux，又使用图形用户界面的小伙伴，都曾在互联网上查阅与所谓“系统美化教程”相关的网页内容
 
-> 原则：如果没有特别省心省事的成熟解决方案，那么一个软件在哪种操作系统上的官方支持最好，就让它在哪种操作系统上运行，有经济条件的可以购买多台电脑，无则 see [there](https://liupj.top/2022/02/04/multi-os/)
+然后模仿着、结合自己的审美，对自己的 Linux 图形界面进行美化。当然，我也不例外。
 
-- 还在纠结使用哪种 linux 发行版吗？适合自己的才是最好的：[Distrochooser](https://distrochooser.de/)
-- 本教程选用的 Linux 发行版：[ManjaroLinux](https://manjaro.org/)
-- 本教程选用的桌面环境：[KDE](https://kde.org/)
-- 当然，你也可以尝试使用窗口管理器来替代桌面环境，如：[dwm](http://dwm.suckless.org/)
-- 无论你遇到任何关于 ManjaroLinux 的问题，都可以通过以下途径寻找解决方案
-  - [ManjaroWiki](https://wiki.manjaro.org/index.php/Main_Page)
-  - [ManjaroForum](https://forum.manjaro.org/)
-  - [ArchWiki](https://wiki.archlinux.org/)
-  - [ArchForum](https://bbs.archlinux.org/)
-  - [KdeForum](https://forum.kde.org/)
-  - [Github](https://github.com/)
-  - [Google](https://www.google.com/)
-  - [必应](https://www.bing.com/)
-  - [stackoverflow](https://stackoverflow.com/)
-  - 阅读[Stop-Ask-Questions-The-Stupid-Ways](https://github.com/Brannua/Stop-Ask-Questions-The-Stupid-Ways)之后问我
-  - 拒绝~~[Baidu](https://www.baidu.com/)~~
+---
 
-> 哦天，你是在想如何安装 ManjaroLinux 吗？这是考验你的第一个问题
->
-> 不过别担心，[Google](https://www.google.com/) can proably help you.
+但是，现在的我有了一定的 Linux 使用经验，我认为：
 
-#### 注意
+现在网上很多所谓的“系统美化教程”都极其不讲究，这包括但不限于
 
-> 本教程不提供科学上网教程，但你必须设置系统代理，确保能够以较好的网络速度访问墙外资源，才能顺利实践本教程 ！
+上来就让你安装这个安装那个，不加解释，也没有使用官方文档作为参考依据
+
+更有甚者，文章内容逻辑混乱、软件包管理器使用盲目、软件调用、参数指定方式不谨慎，甚至漏洞百出
+
+等等等等
+
+因此，我们应摒弃此类文章，盲目效仿无疑会对你造成误导，并给你的系统稳定性造成极大风险
+
+---
+
+正确的系统美化做法：
+
+要认识到系统美化这件事，它本身就并不重要
+
+因此由于目前我使用 KDE 作为图形化桌面环境
+
+所以只需使用 KDE 默认提供的方式对图形用户界面进行简单调整即可
+
+更何况 KDE 本身就已经十分华丽
+
+#### 搜索问题解决方法的正确姿势
+
+1. 分清是操作系统内核的问题，还是桌面环境的问题，还是应用软件的问题，还是互联网络的问题
+
+2. 以官方文档为第一查询途径，因为其中有百分之九十九你想知道的标准答案
+
+3. 如果你需要向 Linux 社区提问以寻求帮助，那么应当首先阅读[这个项目](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways)
+
+4. 这里给出几个可以提问的链接
+
+    - [ManjaroForum](https://forum.manjaro.org/)
+
+    - [ArchForum](https://bbs.archlinux.org/)
+
+    - [KDEForum](https://forum.kde.org/)
+
+    - [stackoverflow](https://stackoverflow.com/)
+
+5. 你也可以使用搜索引擎，但应拒绝百度，而使用[必应](https://www.bing.com/)或[Google](https://www.google.com/)
+
+#### 专有软件怎么用
+
+大家日常使用的 QQ、微信、WPS 等软件都属于专有的闭源的软件，它们往往会有不尊重用户隐私等一系列安全性问题
+
+并且这些专有软件天生就与崇尚 free 的 GNU/Linux 格格不入
+
+因此，专有软件只配运行于无任何用户个人隐私的、系统兼容性最好的机器上
+
+在 Linux 系统上，使用它们的替代品
+
+#### 如果你想自己挑选 Linux 发行版
+
+[Distrochooser](https://distrochooser.de/)
 
