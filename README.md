@@ -1,9 +1,15 @@
 
-*本笔记书目前处于测试阶段，书中内容持续重构中：2022-06-10*
+> 本笔记书用于记录我个人上手使用 [ManjaroLinux](https://manjaro.org/) 的过程，书中内容持续重构中
 
-> 本笔记书记录我个人上手使用 [ManjaroLinux](https://manjaro.org/) 的过程
->
-> 参考了 [ManjaroLinux 的官方文档](https://wiki.manjaro.org/index.php/Main_Page)和 [ArchLinux 的官方文档](https://wiki.archlinux.org/)，以及[这个项目](https://github.com/ArchLinuxStudio/ArchLinuxTutorial)
+## 主要参考的文档有
+
+[ManjaroWiki](https://wiki.manjaro.org/index.php/Main_Page)
+
+[ArchWiki](https://wiki.archlinux.org/)
+
+[wikipedia](https://www.wikipedia.org/)
+
+[ArchLinuxTutorial | 非官方](https://github.com/ArchLinuxStudio/ArchLinuxTutorial)
 
 ## 我使用 Linux 的心得
 
@@ -15,6 +21,8 @@
 
 而对于计算机专业相关的学生和从业者而言，选用 UnixLike/类Unix 操作系统好处多多，无需多言，谁用谁知道
 
+---
+
 但 macOS 不仅价格不菲，且系统闭源
 
 相比而言，Linux 开源免费、系统稳定流畅（因此世界上大多数企业的服务器都使用 Linux 系统），与 GNU 的结合更是让 Linux 如虎添翼
@@ -23,15 +31,23 @@
 
 使用 Linux 不仅是一个探索和学习的过程，更是一个创造和收获的过程，非常有意思
 
-由于我非常喜欢 Linux 的一个发行版 ArchLinux，包括但不限于其软件包管理器 pacman 和官方文档 ArchWiki 非常好用
+---
+
+由于我非常喜欢 Linux 的一个发行版 ArchLinux，包括但不限于其：系统滚动更新，采用最新的软件包，软件包新软件包管理器 pacman 和官方文档 ArchWiki 非常好用
+
+因此 ArchLinux 非常适合个人用户日常使用
+
+---
+
+但 ArchLinux 的安装步骤十分复杂繁琐，尽管你能从安装 ArchLinux 的过程中学到很多东西，是其余很多系统一直点击下一步的系统安装方式所不能比的
 
 但由于我的笔记本电脑较新，其有 8 个 2G 的内存插槽，这种设计对于 ArchLinux 目前有兼容性问题（目前多于 4 个内存插槽的电脑在安装 ArchLinux 时都会遇到棘手的问题，我暂时没有查询到合适的解决方案）
 
-尽管你能从安装 ArchLinux 的过程中学到很多东西，是其余很多系统一直点击下一步的系统安装方式所不能比的
-
-但 ArchLinux 的安装步骤确实复杂繁琐，为了节约时间，所以我选择了现在比较火的一个基于 ArchLinux 且易于安装的系统：ManjaroLinux
+所以我选择了现在比较火的一个基于 ArchLinux 且易于安装的系统：ManjaroLinux
 
 同时，由于我目前还割舍不掉 KDEConnect 这个远比微信文件传输助手强大好用的东西，所以仍坚持使用 KDE
+
+---
 
 另外，当我将 Vim 的生态玩熟练之后，再去慢慢熟悉平铺式窗口管理器这个备受好评的东西吧～
 
@@ -77,7 +93,7 @@
 
 更何况 KDE 本身就已经十分华丽
 
-#### 搜索问题解决方法的正确姿势
+#### 寻找问题解决方法的正确姿势
 
 1. 分清是操作系统内核的问题，还是桌面环境的问题，还是应用软件的问题，还是互联网络的问题
 
