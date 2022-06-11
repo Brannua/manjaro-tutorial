@@ -1,7 +1,7 @@
 
 > 本笔记书用于记录我个人上手使用 [ManjaroLinux](https://manjaro.org/) 的过程，书中内容持续重构中
 
-## 主要参考的文档有
+## 主要参考的文档
 
 [ManjaroWiki](https://wiki.manjaro.org/index.php/Main_Page)
 
