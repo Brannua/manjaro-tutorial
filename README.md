@@ -33,7 +33,7 @@
 
 ---
 
-由于我非常喜欢 Linux 的一个发行版 ArchLinux，包括但不限于其：系统滚动更新，采用最新的软件包，软件包新软件包管理器 pacman 和官方文档 ArchWiki 非常好用
+由于我非常喜欢 Linux 的一个发行版 ArchLinux，包括但不限于其：系统滚动更新，采用最新的软件包，软件包新软件包管理器 pacman 和官方文档 [ArchWiki](https://wiki.archlinux.org/) 非常好用
 
 因此 ArchLinux 非常适合个人用户日常使用
 
@@ -45,7 +45,7 @@
 
 所以我选择了现在比较火的一个基于 ArchLinux 且易于安装的系统：ManjaroLinux
 
-同时，由于我目前还割舍不掉 KDEConnect 这个远比微信文件传输助手强大好用的东西，所以仍坚持使用 KDE
+同时，由于我目前还割舍不掉 [KDEConnect](https://liupj.top/2022/06/05/kde-connect/) 这个远比微信文件传输助手强大好用的东西，所以仍坚持使用 KDE
 
 ---
 
