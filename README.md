@@ -11,9 +11,7 @@
 
 [ArchLinuxTutorial | 非官方](https://github.com/ArchLinuxStudio/ArchLinuxTutorial)
 
-## 我使用 Linux 的心得
-
-#### 为什么使用 Linux，为什么使用 ManjaroLinux
+## 为什么使用 Linux，为什么使用 ManjaroLinux
 
 你可以将苹果的 macOS 看作是 BSD 的孙子、Unix 的曾孙，而将 Linux 看作 Minix 的徒弟、Unix 的徒孙
 
@@ -51,7 +49,7 @@
 
 另外，当我将 Vim 的生态玩熟练之后，再去慢慢熟悉平铺式窗口管理器这个备受好评的东西吧～
 
-#### 关于专有软件
+## 关于专有软件
 
 大家日常使用的 QQ、微信、WPS 等软件都属于专有软件，它们代码闭源，往往不尊重用户隐私且滥用用户的数据，有一系列安全性问题
 
@@ -59,7 +57,7 @@
 
 > 在崇尚 free 的 GNU/Linux 上，只使用自由软件，寻找或开发这些专有软件的替代品（free 的意思是自由，而非免费）
 
-#### 关于系统美化
+## 关于系统美化
 
 很多刚接触 Linux，又使用图形用户界面的小伙伴，都曾在互联网上查阅与所谓“系统美化教程”相关的网页内容
 
@@ -91,7 +89,7 @@
 
 更何况 KDE 本身就已经十分华丽
 
-#### 寻找问题解决方法的正确姿势
+## 寻找问题解决方法的正确姿势
 
 1. 分清是操作系统内核的问题，还是桌面环境的问题，还是应用软件的问题，还是互联网络的问题
 
@@ -111,7 +109,7 @@
 
 5. 你也可以使用搜索引擎，但应拒绝百度，而使用[必应](https://www.bing.com/)或[Google](https://www.google.com/)
 
-#### 如果你想自己挑选 Linux 发行版
+## 如果你想自己挑选 Linux 发行版
 
 [Distrochooser](https://distrochooser.de/)
 
