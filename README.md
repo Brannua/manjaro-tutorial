@@ -1,5 +1,6 @@
+## 本笔记书持续重构中 ！！！
 
-> 本笔记书用于记录我个人上手使用 [ManjaroLinux](https://manjaro.org/) 的过程，书中内容持续重构中
+> 本笔记书用于记录我个人上手使用 [ManjaroLinux](https://manjaro.org/) 的过程
 
 ## 主要参考的文档
 
