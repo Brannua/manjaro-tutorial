@@ -4,13 +4,11 @@
 
 ## 主要参考的文档
 
-[ManjaroWiki](https://wiki.manjaro.org/index.php/Main_Page)
-
-[ArchWiki](https://wiki.archlinux.org/)
-
-[wikipedia](https://www.wikipedia.org/)
+[ArchWiki](https://wiki.archlinux.org/) & [ManjaroWiki](https://wiki.manjaro.org/index.php/Main_Page)
 
 [ArchLinuxTutorial | 非官方](https://github.com/ArchLinuxStudio/ArchLinuxTutorial)
+
+[wikipedia](https://www.wikipedia.org/)
 
 ## 为什么使用 Linux，为什么使用 ManjaroLinux
 
