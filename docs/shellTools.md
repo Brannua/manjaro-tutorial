@@ -46,7 +46,7 @@
 
 | 名称    | 官方网址                           |
 |:--------|:-----------------------------------|
-| lux     | https://github.com/iawia002/lux    |
+| lux-dl  | https://github.com/iawia002/lux    |
 | you-get | https://github.com/soimort/you-get |
 
 
