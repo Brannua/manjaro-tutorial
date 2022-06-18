@@ -2,4 +2,5 @@
 - [新手上路](/docs/1.md)
 - [初阶魔法](/docs/2.md)
 - [软件推荐](/docs/3.md)
+- [shellTools](/docs/shellTools.md)
 - [debug_list](/docs/4.md)
