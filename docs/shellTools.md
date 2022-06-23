@@ -42,13 +42,18 @@
 | iputils    | https://github.com/iputils/iputils         |
 | speed-test | https://github.com/sindresorhus/speed-test |
 
+#### 文件传输工具
+
+| 名称       | 官方网址                                   |
+|:-----------|:-------------------------------------------|
+| scp        |                                            |
+
 #### 视频下载工具
 
 | 名称    | 官方网址                           |
 |:--------|:-----------------------------------|
 | lux-dl  | https://github.com/iawia002/lux    |
 | you-get | https://github.com/soimort/you-get |
-
 
 #### 文件资源管理工具
 
