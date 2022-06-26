@@ -33,12 +33,6 @@
 | sed  | 流编辑器，专注行编辑 |
 | awk  | 流编辑器，专注列编辑 |
 
-#### 编辑器
-
-| 名称 | 官方网址   |
-|:-----|:-----------|
-| wc   | word count |
-
 #### 流编辑
 
 | 名称  | 官方网址 |
@@ -46,6 +40,18 @@
 | sort  | <++>     |
 | uniq  | <++>     |
 | paste | <++>     |
+
+#### 统计工具
+
+| 名称 | 官方网址   |
+|:-----|:-----------|
+| wc   | word count |
+
+#### 计算器
+
+| 名称 | 官方网址                   |
+|:-----|:---------------------------|
+| bc   | berkely caculator ? may be |
 
 #### 系统服务管理
 
@@ -125,6 +131,13 @@
 |:------------|:-------------------------------------------|
 | ffmpeg      | https://github.com/FFmpeg/FFmpeg           |
 | imagemagick | https://github.com/ImageMagick/ImageMagick |
+| convert     | <++>                                       |
+
+#### image viewer
+
+| 名称 | 官方网址                                 |
+|:-----|:-----------------------------------------|
+| feh  | Fast and light imlib2-based image viewer |
 
 #### 一些好玩儿的工具
 
