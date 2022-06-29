@@ -78,11 +78,15 @@
 | iputils    | https://github.com/iputils/iputils         |
 | speed-test | https://github.com/sindresorhus/speed-test |
 
-#### 文件传输工具
+#### Copying files over SSH
 
-| 名称       | 官方网址                                   |
-|:-----------|:-------------------------------------------|
-| scp        |                                            |
+refer to: https://missing.csail.mit.edu/2020/command-line/
+
+| 名称    | 官方网址 |
+|:--------|:---------|
+| ssh+tee |          |
+| scp     |          |
+| rsync   |          |
 
 #### 视频下载工具
 
