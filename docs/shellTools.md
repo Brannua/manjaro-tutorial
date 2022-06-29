@@ -41,6 +41,12 @@
 | uniq  | <++>     |
 | paste | <++>     |
 
+#### 参数处理
+
+| 名称  | 官方网址                                                                         |
+|:------|:---------------------------------------------------------------------------------|
+| xargs | Execute a command with piped arguments coming from another command, a file, etc. |
+
 #### 统计工具
 
 | 名称 | 官方网址   |
@@ -134,6 +140,8 @@
 | convert     | <++>                                       |
 
 #### image viewer
+
+> uninstall gwenview.
 
 | 名称 | 官方网址                                 |
 |:-----|:-----------------------------------------|
