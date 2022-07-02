@@ -151,7 +151,7 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 
 #### image viewer
 
-> uninstall gwenview.
+> gwenview 其实也挺好用的
 
 | 名称 | 官方网址                                 |
 |:-----|:-----------------------------------------|
