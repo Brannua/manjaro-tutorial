@@ -17,6 +17,12 @@
 
 出于学习的目的，我决定使用更常见更通用兼容性更好的 [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 
+#### add gitstatus to shell_prompt
+
+| 名称      | 官方网址                             |
+|:----------|:-------------------------------------|
+| gitstatus | https://github.com/romkatv/gitstatus |
+
 #### Shell Debugger
 
 | 名称       | 官方网址                               |
