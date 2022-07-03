@@ -96,10 +96,11 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 
 #### 视频下载工具
 
-| 名称    | 官方网址                           |
-|:--------|:-----------------------------------|
-| lux-dl  | https://github.com/iawia002/lux    |
-| you-get | https://github.com/soimort/you-get |
+| 名称            | 官方网址                                   |
+|:----------------|:-------------------------------------------|
+| lux-dl          | https://github.com/iawia002/lux            |
+| you-get         | https://github.com/soimort/you-get         |
+| Mooc_Downloader | https://github.com/Brannua/Mooc_Downloader |
 
 #### 文件资源管理工具
 
