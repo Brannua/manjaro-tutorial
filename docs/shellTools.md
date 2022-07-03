@@ -108,6 +108,10 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 | exa    | https://github.com/ogham/exa |
 | ranger | https://ranger.github.io     |
 
+将默认配置文件拷贝到`~/.config/ranger`、让各种文件可以预览、集成 icon 和 git 等等一系列功能，都可参考官方文档
+
+对于 manjaroKDE with x11，亲测 ueberzug 对于图片预览比较好用
+
 #### 搜索工具
 
 | 名称    | 官方网址                              |
