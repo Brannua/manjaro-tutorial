@@ -155,11 +155,9 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 
 #### image viewer
 
-> gwenview 其实也挺好用的
-
-| 名称 | 官方网址                                 |
-|:-----|:-----------------------------------------|
-| feh  | Fast and light imlib2-based image viewer |
+| 名称 | 官方网址                                            |
+|:-----|:----------------------------------------------------|
+| imv  | https://archlinux.org/packages/community/x86_64/imv |
 
 #### 一些好玩儿的工具
 
