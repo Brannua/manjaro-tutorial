@@ -123,9 +123,10 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 
 #### 增强 Git 能力的工具
 
-| 名称          | 官方网址                                  |
-|:--------------|:------------------------------------------|
-| diff-so-fancy | https://github.com/so-fancy/diff-so-fancy |
+| 名称          | 官方网址                                                  |
+|:--------------|:----------------------------------------------------------|
+| diff-so-fancy | https://github.com/so-fancy/diff-so-fancy                 |
+| git-sizer     | https://archlinux.org/packages/community/x86_64/git-sizer |
 
 #### 与剪贴板交互的工具
 
