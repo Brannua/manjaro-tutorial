@@ -115,11 +115,12 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 
 #### 搜索工具
 
-| 名称    | 官方网址                              |
-|:--------|:--------------------------------------|
-| fd      | https://github.com/sharkdp/fd         |
-| fzf     | https://github.com/junegunn/fzf       |
-| ripgrep | https://github.com/BurntSushi/ripgrep |
+| 名称    | 官方网址                                                |
+|:--------|:--------------------------------------------------------|
+| fd      | https://github.com/sharkdp/fd                           |
+| locate  | https://www.man7.org/linux/man-pages/man1/locate.1.html |
+| fzf     | https://github.com/junegunn/fzf                         |
+| ripgrep | https://github.com/BurntSushi/ripgrep                   |
 
 #### 增强 Git 能力的工具
 
