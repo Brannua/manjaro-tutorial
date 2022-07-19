@@ -29,6 +29,13 @@
 |:-----------|:---------------------------------------|
 | shellcheck | https://github.com/koalaman/shellcheck |
 
+#### 压缩/解压缩
+
+| 名称  | 官方网址 |
+|:------|:---------|
+| zip   | <++>     |
+| unzip | <++>     |
+
 #### 编辑器
 
 > 如下三款编辑器均为一个完整的编程语言
@@ -49,9 +56,9 @@
 
 #### 参数处理
 
-| 名称  | 官方网址                                                                         |
-|:------|:---------------------------------------------------------------------------------|
-| xargs | Execute a command with piped arguments coming from another command, a file, etc. |
+| 名称  | 官方网址                                   |
+|:------|:-------------------------------------------|
+| xargs | execute a command using STDIN as arguments |
 
 #### 统计工具
 
