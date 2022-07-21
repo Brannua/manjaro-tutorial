@@ -15,13 +15,17 @@
 
 #### Shell Scripting Language
 
-出于学习的目的，我决定使用更常见更通用兼容性更好的 [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+~~出于学习的目的，我决定使用更常见更通用兼容性更好的 [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))~~
+
+目前使用 [Zsh](https://en.wikipedia.org/wiki/Z_shell)
 
 #### add gitstatus to shell_prompt
 
-| 名称      | 官方网址                             |
-|:----------|:-------------------------------------|
-| gitstatus | https://github.com/romkatv/gitstatus |
+| 名称          | 官方网址                             |
+|:--------------|:-------------------------------------|
+| ~~gitstatus~~ | https://github.com/romkatv/gitstatus |
+
+目前是自己自定义的 zsh 的 prompt，使用了 zsh 内置的 vsc_info，参考了[这篇博客](https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html)
 
 #### Shell Debugger
 
@@ -62,9 +66,10 @@
 
 #### 统计工具
 
-| 名称 | 官方网址   |
-|:-----|:-----------|
-| wc   | word count |
+| 名称 | 官方网址               |
+|:-----|:-----------------------|
+| wc   | word count             |
+| du   | file/folder size count |
 
 #### 计算器
 
