@@ -133,6 +133,7 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 | locate  | https://www.man7.org/linux/man-pages/man1/locate.1.html |
 | fzf     | https://github.com/junegunn/fzf                         |
 | ripgrep | https://github.com/BurntSushi/ripgrep                   |
+| ag      | https://github.com/ggreer/the_silver_searcher           |
 
 #### 增强 Git 能力的工具
 
