@@ -71,6 +71,12 @@
 | wc   | word count             |
 | du   | file/folder size count |
 
+#### 数据分析工具
+
+| 名称     | 官方网址                                                                              |
+|:---------|:--------------------------------------------------------------------------------------|
+| datamash | Performs basic numeric,textual and statistical operations on input textual data files |
+
 #### 计算器
 
 | 名称 | 官方网址                   |
