@@ -235,3 +235,8 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 | fy    | https://github.com/tsq/youdao-cli-translator |
 | fanyi | https://github.com/afc163/fanyi              |
 
+#### 虚拟机
+
+| 名称        | 官方网址   |
+|:------------|:---------|
+| VBoxManage  |          |
