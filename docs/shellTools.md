@@ -177,9 +177,10 @@ refer to: https://missing.csail.mit.edu/2020/command-line/
 
 #### image viewer
 
-| 名称 | 官方网址                                            |
-|:-----|:----------------------------------------------------|
-| imv  | https://archlinux.org/packages/community/x86_64/imv |
+| 名称     | 官方网址                                            |
+|:---------|:----------------------------------------------------|
+| imv      | https://archlinux.org/packages/community/x86_64/imv |
+| gwenview |                                                     |
 
 #### 一些好玩儿的工具
 
