@@ -40,7 +40,7 @@
 
 ~~所以我选择了现在比较火的一个基于 ArchLinux 且易于安装的系统：ManjaroLinux~~
 
-Archlinux 官方提供了一个用于快速安装 Archlinux 的[脚本](https://github.com/archlinux/archinstall)，经过尝试，succeed ！这适用于你不想学习 Archlinux 的安装过程，而只是想要快速得到一个运行起来的 Archlinux。
+Archlinux 官方提供了一个用于快速安装 Archlinux 的[脚本](https://github.com/archlinux/archinstall)，经过尝试，succeed ！这适用于不想学习 Archlinux 的安装过程，而只是想要快速得到一个运行起来的 Archlinux 的新手小白或资深 Linux 开发者（显然这种安装方式不适合我）但验证了我的新笔记本电脑是可以成功安装 Archlinux 的 ！
 
 同时，由于我目前还割舍不掉 [KDEConnect](https://liupj.top/2022/06/05/kde-connect/) 这个远比微信文件传输助手强大好用的东西，所以仍坚持使用 KDE
 
