@@ -8,7 +8,7 @@
 
 [wikipedia](https://www.wikipedia.org/)
 
-## 为什么使用 Linux，为什么使用 ManjaroLinux
+## 为什么使用 Linux
 
 你可以将苹果的 macOS 看作是 BSD 的孙子、Unix 的曾孙，而将 Linux 看作 Minix 的徒弟、Unix 的徒孙
 
@@ -36,15 +36,19 @@
 
 但 ArchLinux 的安装步骤十分复杂繁琐，尽管你能从安装 ArchLinux 的过程中学到很多东西，是其它很多系统一直点击下一步的系统安装方式所不能比的
 
-但由于我的笔记本电脑较新，其有 8 个 2G 的内存插槽，这种设计对于 ArchLinux 目前有兼容性问题（目前多于 4 个内存插槽的电脑在安装 ArchLinux 时都会遇到棘手的问题，我暂时没有查询到合适的解决方案）
+~~但由于我的笔记本电脑较新，其有 8 个 2G 的内存插槽，这种设计对于 ArchLinux 目前有兼容性问题（目前多于 4 个内存插槽的电脑在安装 ArchLinux 时都会遇到棘手的问题，我暂时没有查询到合适的解决方案）~~
 
-所以我选择了现在比较火的一个基于 ArchLinux 且易于安装的系统：ManjaroLinux
+~~所以我选择了现在比较火的一个基于 ArchLinux 且易于安装的系统：ManjaroLinux~~
+
+Archlinux 官方提供了一个用于快速安装 Archlinux 的[脚本](https://github.com/archlinux/archinstall)，经过尝试，succeed ！这适用于你不想学习 Archlinux 的安装过程，而只是想要快速得到一个运行起来的 Archlinux。
 
 同时，由于我目前还割舍不掉 [KDEConnect](https://liupj.top/2022/06/05/kde-connect/) 这个远比微信文件传输助手强大好用的东西，所以仍坚持使用 KDE
 
----
+~~另外，我打算先熟悉 Vim 的生态，然后再学习使用平铺式窗口管理器~~
 
-另外，我打算先熟悉 Vim 的生态，然后再学习使用平铺式窗口管理器
+由于我已经非常熟悉 Vim，所以正式开始尝试使用平铺式窗口管理器，看了一下[排行榜](https://www.slant.co/topics/390/~best-window-managers-for-linux)，i3 成为我使用的第一款窗口管理器。
+
+![20221104134357](https://aliyun-oss-lpj.oss-cn-qingdao.aliyuncs.com/images/by-clipboard/20221104134357.png)
 
 ## 关于专有软件
 
